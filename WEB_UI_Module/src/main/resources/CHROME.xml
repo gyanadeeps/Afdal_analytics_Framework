@@ -11,7 +11,7 @@
 
     <test name="Afdal Analytics Login Page Ui Validation">
         <classes>
-            <class name="test.HomePage.LoginPageUiValidation"/>
+            <class name="test.HomePage.AfdalLoginPageUiValidation"/>
         </classes>
 
     </test>

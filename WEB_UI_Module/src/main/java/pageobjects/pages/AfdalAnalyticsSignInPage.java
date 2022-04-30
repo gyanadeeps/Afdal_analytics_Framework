@@ -25,5 +25,10 @@ public class AfdalAnalyticsSignInPage implements IAfdalAnalyticsSignInPage
         return AfdalPageFactory.getHomepage();
     }
 
+    @Override
+    public IAfdalAnalyticsSignInPage clickOnSignUpButton() {
+        return null;
+    }
+
 
 }

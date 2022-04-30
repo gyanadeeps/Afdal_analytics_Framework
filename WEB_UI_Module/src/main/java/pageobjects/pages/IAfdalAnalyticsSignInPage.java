@@ -4,4 +4,5 @@ public interface IAfdalAnalyticsSignInPage
 {
 
   IAfdalAnalyticsSignInPage clickOnSignInButton();
+  IAfdalAnalyticsSignInPage clickOnSignUpButton();
 }
