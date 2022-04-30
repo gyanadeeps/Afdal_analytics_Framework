@@ -63,7 +63,7 @@ public class ChromeRemoteDriverProvider implements RemoteDriver {
         System.err.println("Chrome driver Provider Remote");
        options.addArguments("--window-size=1920,1080");
        // options.addArguments("--window-size=480,620");
-       //options.addArguments("--headless");
+       options.addArguments("--headless");
         options.addArguments("--incognito");
        // options.setExperimentalOption("mobileEmulation", mobileEmulation);
         options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
