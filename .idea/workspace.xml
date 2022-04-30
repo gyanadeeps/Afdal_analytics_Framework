@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="097997cd-fcb9-4e89-8743-443c9de2d38b" name="Changes" comment="Test cases fixed" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="module" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+    <option name="showPreview" value="true" />
+  </component>
+  <component name="ProjectId" id="1wBFi6tAIPFk3HRWFwjHAUvE6U7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\team2\IdeaProjects\Web_API_Mobile_framework\WEB_UI_Module\src\main\resources" />
+      <recent name="C:\Users\team2\IdeaProjects\Web_API_Mobile_framework\Mobile_Module\src\test\resources" />
+      <recent name="C:\Users\team2\IdeaProjects\Web_API_Mobile_framework\Mobile_Module\src\test\java\com\project\test\HomePage" />
+      <recent name="D:\EcloudMS_Automation\WEB_UI_Module\allure-results" />
+      <recent name="D:\MyNavidGaid_automation\WEB_UI_Module\allure-results" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\team2\IdeaProjects\Web_API_Mobile_framework\Mobile_Module\src\test\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="engine.webdriver" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn test -DSuite=testng" />
+      <command value="mvn clean test -Dtest=WebUI" />
+      <command value="mvn clean" />
+      <command value="mvn clean test -Dtest=testng" />
+      <command value="mvn test" />
+      <command value="mvn test -DDRIVER_TYPE=chrome" />
+      <command value="mvn test -DDRIVER_TYPE=IE" />
+      <command value="mvn test -DDRIVER=IE" />
+      <command value="mvn test -DDRIVER=EDGE" />
+      <command value="mvn test -DDRIVER=FF" />
+      <command value="mvn test -DDRIVER_TYPE=FF" />
+      <command value="mvn clean test -DDRIVER=FF" />
+      <command value="mvn clean test -Dbrowser=FF" />
+    </option>
+  </component>
+  <component name="RunManager" selected="TestNG.C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/WEB_UI_Module/src/main/resources/CHROME.xml">
+    <configuration name="C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/Mobile_Module/src/test/resources/Android.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Mobile_Module" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/Mobile_Module/src/test/resources/Android.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true -DBASE_URI=&quot;https://api.spotify.com&quot; -DACCOUNT_BASE_URI=&quot;https://accounts.spotify.com&quot;" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/WEB_UI_Module/src/main/resources/CHROME.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WEB_UI_Module" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/WEB_UI_Module/src/main/resources/CHROME.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true -DBASE_URI=&quot;https://api.spotify.com&quot; -DACCOUNT_BASE_URI=&quot;https://accounts.spotify.com&quot;" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/WEB_UI_Module/src/main/resources/SAFARI.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WEB_UI_Module" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/WEB_UI_Module/src/main/resources/SAFARI.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true -DBASE_URI=&quot;https://api.spotify.com&quot; -DACCOUNT_BASE_URI=&quot;https://accounts.spotify.com&quot;" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerDetailsFromRecentActivityTab" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WEB_UI_Module" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.HomePage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="test.HomePage" />
+      <option name="MAIN_CLASS_NAME" value="test.HomePage.CustomerDetailsFromRecentActivityTab" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true -DBASE_URI=&quot;https://api.spotify.com&quot; -DACCOUNT_BASE_URI=&quot;https://accounts.spotify.com&quot;" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NewLoanFromCustomerTab" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WEB_UI_Module" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.HomePage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="test.HomePage" />
+      <option name="MAIN_CLASS_NAME" value="test.HomePage.NewLoanFromCustomerTab" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true -DBASE_URI=&quot;https://api.spotify.com&quot; -DACCOUNT_BASE_URI=&quot;https://accounts.spotify.com&quot;" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true -DBASE_URI=&quot;https://api.spotify.com&quot; -DACCOUNT_BASE_URI=&quot;https://accounts.spotify.com&quot;" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/WEB_UI_Module/src/main/resources/SAFARI.xml" />
+      <item itemvalue="TestNG.C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/WEB_UI_Module/src/main/resources/CHROME.xml" />
+      <item itemvalue="TestNG.CustomerDetailsFromRecentActivityTab" />
+      <item itemvalue="TestNG.C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/Mobile_Module/src/test/resources/Android.xml" />
+      <item itemvalue="TestNG.NewLoanFromCustomerTab" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/WEB_UI_Module/src/main/resources/CHROME.xml" />
+        <item itemvalue="TestNG.NewLoanFromCustomerTab" />
+        <item itemvalue="TestNG.C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/Mobile_Module/src/test/resources/Android.xml" />
+        <item itemvalue="TestNG.CustomerDetailsFromRecentActivityTab" />
+        <item itemvalue="TestNG.C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/WEB_UI_Module/src/main/resources/SAFARI.xml" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="097997cd-fcb9-4e89-8743-443c9de2d38b" name="Changes" comment="" />
+      <created>1627924201276</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627924201276</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Validation test case Report">
+      <created>1643310912981</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1643310912982</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Validation test case Report v1">
+      <created>1643310931473</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1643310931474</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Validation test case Report v2">
+      <created>1643388677447</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1643388677449</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Account Test Cases">
+      <created>1643466706939</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1643466706940</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Account Test Cases v2">
+      <created>1643466722059</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1643466722059</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Account Test Cases v3">
+      <created>1643736383273</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1643736383273</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Account Test Cases v4">
+      <created>1643736407451</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1643736407451</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Account Test Cases v5">
+      <created>1643911469181</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1643911469182</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Account Test Cases v6">
+      <created>1643912956287</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1643912956287</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Account Test Cases v7">
+      <created>1643915602231</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1643915602232</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Account Test Cases v8">
+      <created>1644293417202</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1644293417203</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Account Test Cases v10">
+      <created>1644428437880</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1644428437881</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Account Test Cases v11">
+      <created>1645038141374</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1645038141375</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Account Test Cases v12">
+      <created>1645118311548</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1645118311549</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Account Test Cases v13">
+      <created>1645369817171</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1645369817187</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Account Test Cases v13">
+      <created>1645369845102</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1645369845102</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Account Test Cases v14">
+      <created>1645457487330</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1645457487331</updated>
+    </task>
+    <task id="LOCAL-00075" summary="new Changes in pom.xml">
+      <created>1645462977334</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1645462977334</updated>
+    </task>
+    <task id="LOCAL-00076" summary="new Changes in pom.xml v1">
+      <created>1645466134812</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1645466134812</updated>
+    </task>
+    <task id="LOCAL-00077" summary="new Changes in pom.xml v2">
+      <created>1645468522717</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1645468522718</updated>
+    </task>
+    <task id="LOCAL-00078" summary="new Changes in accounttab v3">
+      <created>1645547931463</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1645547931499</updated>
+    </task>
+    <task id="LOCAL-00079" summary="new Changes in configuration v3">
+      <created>1645640623149</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1645640623150</updated>
+    </task>
+    <task id="LOCAL-00080" summary="new Job created">
+      <created>1646158657055</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1646158657056</updated>
+    </task>
+    <task id="LOCAL-00081" summary="new Job created v1">
+      <created>1646160657904</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1646160657906</updated>
+    </task>
+    <task id="LOCAL-00082" summary="new Job created v2">
+      <created>1646160713391</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1646160713413</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Mobile Test cases v2">
+      <created>1647358097101</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1647358097102</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Mobile Test cases v3">
+      <created>1647358116148</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1647358116148</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Mobile Test cases v4">
+      <created>1647361552193</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1647361552196</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Mobile Test cases v5">
+      <created>1647370257327</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1647370257327</updated>
+    </task>
+    <task id="LOCAL-00087" summary="Mobile Test cases v6">
+      <created>1647371327097</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1647371327097</updated>
+    </task>
+    <task id="LOCAL-00088" summary="Mobile Test cases v7">
+      <created>1647504336744</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1647504336749</updated>
+    </task>
+    <task id="LOCAL-00089" summary="Mobile Test cases v8">
+      <created>1647671341721</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1647671341722</updated>
+    </task>
+    <task id="LOCAL-00090" summary="Mobile Test cases v9">
+      <created>1647675775313</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1647675775313</updated>
+    </task>
+    <task id="LOCAL-00091" summary="Mobile Test cases v10">
+      <created>1647882614410</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1647882614411</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Mobile Test cases v11">
+      <created>1647884830875</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1647884830875</updated>
+    </task>
+    <task id="LOCAL-00093" summary="Mobile Test cases v12">
+      <created>1647887711125</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1647887711125</updated>
+    </task>
+    <task id="LOCAL-00094" summary="Mobile Test cases v13">
+      <created>1647966131508</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1647966131508</updated>
+    </task>
+    <task id="LOCAL-00095" summary="Web Test cases v14">
+      <created>1647969758121</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1647969758121</updated>
+    </task>
+    <task id="LOCAL-00096" summary="Web Test cases v15">
+      <created>1647970553973</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1647970553976</updated>
+    </task>
+    <task id="LOCAL-00097" summary="mobile Test cases v16">
+      <created>1648030329030</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1648030329030</updated>
+    </task>
+    <task id="LOCAL-00098" summary="mobile Test cases v18">
+      <created>1648030684247</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1648030684247</updated>
+    </task>
+    <task id="LOCAL-00099" summary="mobile Test cases v19">
+      <created>1648032118384</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1648032118384</updated>
+    </task>
+    <task id="LOCAL-00100" summary="mobile Test cases v20">
+      <created>1648057141263</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1648057141264</updated>
+    </task>
+    <task id="LOCAL-00101" summary="mobile Test cases v21">
+      <created>1648136347362</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1648136347362</updated>
+    </task>
+    <task id="LOCAL-00102" summary="Browserstack configuration v2">
+      <created>1648364931358</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1648364931358</updated>
+    </task>
+    <task id="LOCAL-00103" summary="Browserstack configuration v3">
+      <created>1648365047173</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1648365047174</updated>
+    </task>
+    <task id="LOCAL-00104" summary="Fixed the test case">
+      <created>1649082716605</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1649082716606</updated>
+    </task>
+    <task id="LOCAL-00105" summary="Report title">
+      <created>1649167023969</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1649167023970</updated>
+    </task>
+    <task id="LOCAL-00106" summary="Test cases fixed">
+      <created>1649992688978</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1649992688995</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/MyNavidGaid_automation" />
+    </ignored-roots>
+    <MESSAGE value="Mobile Test cases" />
+    <MESSAGE value="Mobile Test cases v2" />
+    <MESSAGE value="Mobile Test cases v3" />
+    <MESSAGE value="Mobile Test cases v4" />
+    <MESSAGE value="Mobile Test cases v5" />
+    <MESSAGE value="Mobile Test cases v6" />
+    <MESSAGE value="Mobile Test cases v7" />
+    <MESSAGE value="Mobile Test cases v8" />
+    <MESSAGE value="Mobile Test cases v9" />
+    <MESSAGE value="Mobile Test cases v10" />
+    <MESSAGE value="Mobile Test cases v11" />
+    <MESSAGE value="Mobile Test cases v12" />
+    <MESSAGE value="Mobile Test cases v13" />
+    <MESSAGE value="Web Test cases v14" />
+    <MESSAGE value="Web Test cases v15" />
+    <MESSAGE value="mobile Test cases v16" />
+    <MESSAGE value="mobile Test cases v18" />
+    <MESSAGE value="mobile Test cases v19" />
+    <MESSAGE value="mobile Test cases v20" />
+    <MESSAGE value="mobile Test cases v21" />
+    <MESSAGE value="Browserstack configuration v2" />
+    <MESSAGE value="Browserstack configuration v3" />
+    <MESSAGE value="Fixed the test case" />
+    <MESSAGE value="Report title" />
+    <MESSAGE value="Test cases fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test cases fixed" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/README_md$NewLoanFromActivityCenter.ic" NAME="NewLoanFromActivityCenter Coverage Results" MODIFIED="1642441795656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>test.HomePage.*</FILTER>
+    </SUITE>
+  </component>
+</project>

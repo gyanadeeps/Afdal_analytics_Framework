@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite name="test.HomePage.LoginPageUiValidation">
+    <testcase class="LoginPageUiValidation" classname="test.HomePage.LoginPageUiValidation" id="test.HomePage.LoginPageUiValidation.verifyHomePage{0}" index="0" name="verifyHomePage" package="test.HomePage">
+        <session>b33bd5c93ad962c4d2542aae84c606579f22400c</session>
+        <projectType>AUTOMATE</projectType>
+    </testcase>
+</testsuite>

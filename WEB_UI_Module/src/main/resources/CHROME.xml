@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Afdal Analytics Validation Suite" parallel="classes" thread-count="2">
+    <parameter name="browser" value="none" />
+    <listeners>
+<!--        <listener class-name="BaseClasses.AnnotationTransformer"></listener>-->
+        <listener class-name="Reporting.TestNGCustomReport"></listener>
+
+
+    </listeners>
+
+    <test name="Afdal Analytics Login Page Ui Validation">
+        <classes>
+            <class name="test.HomePage.LoginPageUiValidation"/>
+        </classes>
+
+    </test>
+
+
+
+
+</suite> <!-- Suite -->

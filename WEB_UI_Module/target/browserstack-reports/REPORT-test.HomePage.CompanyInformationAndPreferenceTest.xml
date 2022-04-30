@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite name="test.HomePage.CompanyInformationAndPreferenceTest">
+    <testcase class="CompanyInformationAndPreferenceTest" classname="test.HomePage.CompanyInformationAndPreferenceTest" id="test.HomePage.CompanyInformationAndPreferenceTest.verifyCompanyInformation{0}" index="0" name="verifyCompanyInformation" package="test.HomePage">
+        <session>3c16dff5130f775be959a30065bf117014127ed8</session>
+        <projectType>AUTOMATE</projectType>
+    </testcase>
+</testsuite>

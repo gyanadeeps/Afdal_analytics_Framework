@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite name="test.HomePage.AccountTabFunctionalityTest">
+    <testcase class="AccountTabFunctionalityTest" classname="test.HomePage.AccountTabFunctionalityTest" id="test.HomePage.AccountTabFunctionalityTest.verifyAccountTab{0}" index="0" name="verifyAccountTab" package="test.HomePage">
+        <session>3c16dff5130f775be959a30065bf117014127ed8</session>
+        <projectType>AUTOMATE</projectType>
+    </testcase>
+</testsuite>

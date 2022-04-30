@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite name="test.HomePage.NewHomeOwnerProfileUsingCurrentLocation">
+    <testcase class="NewHomeOwnerProfileUsingCurrentLocation" classname="test.HomePage.NewHomeOwnerProfileUsingCurrentLocation" id="test.HomePage.NewHomeOwnerProfileUsingCurrentLocation.verifyNewHomeownerProfileGeoLocation{0}" index="0" name="verifyNewHomeownerProfileGeoLocation" package="test.HomePage">
+        <session>3c16dff5130f775be959a30065bf117014127ed8</session>
+        <projectType>AUTOMATE</projectType>
+    </testcase>
+</testsuite>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite name="test.HomePage.NewLoadFromActivityCenterTotalJobFieldValidation">
+    <testcase class="NewLoadFromActivityCenterTotalJobFieldValidation" classname="test.HomePage.NewLoadFromActivityCenterTotalJobFieldValidation" id="test.HomePage.NewLoadFromActivityCenterTotalJobFieldValidation.verifyNewLoanButtonValidationFromActivityCenter{0}" index="0" name="verifyNewLoanButtonValidationFromActivityCenter" package="test.HomePage">
+        <session>3c16dff5130f775be959a30065bf117014127ed8</session>
+        <projectType>AUTOMATE</projectType>
+    </testcase>
+</testsuite>
