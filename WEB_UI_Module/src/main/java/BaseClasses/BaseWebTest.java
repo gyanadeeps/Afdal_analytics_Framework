@@ -36,24 +36,13 @@ public class BaseWebTest {
 
 
 
-    @Parameters("browser")
+
     @BeforeTest
-    protected void beforeSuite(ITestContext context,String browser) {
+    protected void beforeSuite(ITestContext context)
+    {
        new ExtentManager().createInstance();
 
-        if(browser.equalsIgnoreCase("edge")) {
-            WebDriverRunner.setWebDriver(a.instantiateEdgeDriver(cap));
-            System.out.println("URL Name --> "+ AFDALANALYTICS_URL);
-        }
-        else if(browser.equalsIgnoreCase("safari"))
-        {
-            WebDriverRunner.setWebDriver(a.instantiateSafariDriver(cap));
-            System.out.println("URL Name --> "+ AFDALANALYTICS_URL);
-        }
 
-       else if(browser.equalsIgnoreCase("none")
-        )
-        {
             DriverBinaryManager.setupWebDriverBinary();
 
             //System.out.println("Suite Name --> "+ SUITENAME);
@@ -62,7 +51,7 @@ public class BaseWebTest {
 
 
 
-    }
+
 
 
 

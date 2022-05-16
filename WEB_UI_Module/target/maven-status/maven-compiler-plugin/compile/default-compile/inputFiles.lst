@@ -3,6 +3,7 @@ C:\Users\team2\IdeaProjects\Afdal_analytics_Framework\WEB_UI_Module\src\main\jav
 C:\Users\team2\IdeaProjects\Afdal_analytics_Framework\WEB_UI_Module\src\main\java\engine\webdriver\RemoteDriver.java
 C:\Users\team2\IdeaProjects\Afdal_analytics_Framework\WEB_UI_Module\src\main\java\data\StringUtilInternal.java
 C:\Users\team2\IdeaProjects\Afdal_analytics_Framework\WEB_UI_Module\src\main\java\engine\webdriver\DriverType.java
+C:\Users\team2\IdeaProjects\Afdal_analytics_Framework\WEB_UI_Module\src\main\java\pageobjects\pages\AfdalAnalyticsSignUp.java
 C:\Users\team2\IdeaProjects\Afdal_analytics_Framework\WEB_UI_Module\src\main\java\utilities\SeleniumUtils.java
 C:\Users\team2\IdeaProjects\Afdal_analytics_Framework\WEB_UI_Module\src\main\java\engine\webdriver\ChromeRemoteDriverProvider.java
 C:\Users\team2\IdeaProjects\Afdal_analytics_Framework\WEB_UI_Module\src\main\java\utilities\GetRandomDataGenerator.java
@@ -42,7 +43,7 @@ C:\Users\team2\IdeaProjects\Afdal_analytics_Framework\WEB_UI_Module\src\main\jav
 C:\Users\team2\IdeaProjects\Afdal_analytics_Framework\WEB_UI_Module\src\main\java\engine\DriverBinaryManager.java
 C:\Users\team2\IdeaProjects\Afdal_analytics_Framework\WEB_UI_Module\src\main\java\pageobjects\pages\AfdalAnalyticsSignInPage.java
 C:\Users\team2\IdeaProjects\Afdal_analytics_Framework\WEB_UI_Module\src\main\java\engine\webdriver\EdgeDriverProvider.java
-C:\Users\team2\IdeaProjects\Afdal_analytics_Framework\WEB_UI_Module\src\main\java\test\HomePage\LoginPageUiValidation.java
+C:\Users\team2\IdeaProjects\Afdal_analytics_Framework\WEB_UI_Module\src\main\java\test\HomePage\AfdalLoginPageUiValidation.java
 C:\Users\team2\IdeaProjects\Afdal_analytics_Framework\WEB_UI_Module\src\main\java\pageobjects\PageFactoryClasses\PageFactory.java
 C:\Users\team2\IdeaProjects\Afdal_analytics_Framework\WEB_UI_Module\src\main\java\utilities\ExcelCRUDOperations.java
 C:\Users\team2\IdeaProjects\Afdal_analytics_Framework\WEB_UI_Module\src\main\java\utilities\JavaScriptFunction.java

@@ -3,6 +3,7 @@ engine\DriverBinaryManager$1.class
 Reporting\ExtentTestManager.class
 utilities\SeleniumUtils.class
 Reporting\ExtentManager.class
+test\HomePage\AfdalLoginPageUiValidation.class
 utilities\AllureListener.class
 engine\DriverDownloadDirManager.class
 utilities\EnumUtil.class
@@ -10,7 +11,7 @@ Reporting\TestNGCustomReport$ClassResult.class
 Reporting\customOperation\DataInsertionExtentReport.class
 Reporting\TestNGCustomReport.class
 Reporting\TestNGCustomReport$TestResult.class
-test\HomePage\LoginPageUiValidation.class
+pageobjects\pages\AfdalAnalyticsSignUp.class
 utilities\DateUtil.class
 engine\DriverConfigurator$1.class
 BaseClasses\FeatureExecutor.class
