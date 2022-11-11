@@ -4,73 +4,90 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="097997cd-fcb9-4e89-8743-443c9de2d38b" name="Changes" comment="Second commit">
+    <list default="true" id="097997cd-fcb9-4e89-8743-443c9de2d38b" name="Changes" comment="Third commit">
+      <change afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/BaseClasses/AfdalAnalyticsSignupPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/ImplementationClasses/AfdalAnalyticsSignUpImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/PageFactoryClasses/AfdalAnalyticsSignUpPageFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/AfdalAnalyticsSignUpPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/IAfdalAnalyticsSignUpPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/test/HomePage/AfdalSignupPageValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/Artifacts/TestNG_Custom_Report.html" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/Artifacts/TestNG_Custom_Report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/Artifacts/failedScreenshots/verifyHomePage.png" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/Artifacts/failedScreenshots/verifyHomePage.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/06bc5a2b-c6b4-4557-ae83-36b45af32aa7-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/15682131-0245-4a87-8555-5ffb96a952c2-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/17bd366d-f35c-430f-b4b6-37f04de84a31-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/1e216b77-a080-4469-942a-c2f8b09f9e5a-result.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/1f403944-7df3-4dca-b221-d4382d95dab6-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/2721a82c-096b-434d-9f59-3dcadaa2c289-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/2cad23c2-4a6a-42c6-a27f-9a8fdd9c9ff7-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/2dcfa947-a235-4deb-9ed4-8ee6ad9aecc8-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/313d9cf3-639f-4e5a-b5da-28c187a90010-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/34b2844d-517e-49be-a0d2-833d741e2dbd-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/36e7e805-d07e-41fb-866c-99d9684db5e8-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/3b8c145c-3c03-43b4-a407-4fec041e269a-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/4431a804-f535-489f-92e8-61f359eacd38-result.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/4dad37a5-0da6-4440-a1fc-e919418606cf-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/4dbaa364-c380-4c94-a2df-f7005cd73ed2-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/58920d56-8ad2-478c-ab7e-022b6b41163c-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/6516204d-3c28-4a88-96b7-db73be99b28e-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/6cee0e0d-cc26-4a3d-b47f-db24cde4a070-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/725073f6-2782-4bc1-a658-478e567b80ce-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/744b04ce-c5b6-4fd1-bf00-9e985e48ce64-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/79650f7f-b23b-448e-ba8d-9bbb9831bbd7-result.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/7a9a96eb-1c6e-4b83-a7a4-d159f9557484-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/8e46eff8-0676-4be2-bfbc-3031cad01625-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/8e4e9ba3-dfbd-4313-8d9e-aa36cde0d9e4-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/99e041bd-630a-4079-8504-b21ba866156f-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/9b7e21bd-e301-45dd-8356-27810f043584-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/a3b07015-ed2b-45ba-be9f-92d911c55e8b-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/a7f5339d-b3a6-4f59-8d33-ab09a44efc26-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/a8f50d68-a960-4c18-810a-956c43a65909-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/aad24d14-2bfb-4263-b29d-450636fe286b-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/bae0c1d6-b807-41e3-9f0d-3edd50f63f94-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/c3425eca-0ff3-4f28-a288-3a40aa4641af-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/c6ef767e-89db-41fe-a971-ea6f69005f0e-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/d30c9985-87a4-4870-8f4c-93776581ac4e-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/d4498bf2-eb1d-4ef5-9bd3-f05af1363979-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/d88061a7-56a9-4784-af72-d1dcc914f9f4-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/d8a36906-ab27-464a-963d-5d22a973278b-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/da1fbd8f-12db-4b53-a503-5162c6da0cdc-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/dd325dde-97af-487e-99ff-dcbbabba6996-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/f0a364e6-9d3c-4d72-a9b6-af17ddcb359c-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/f0f5af32-c5b3-4188-a2ef-214d5b1fda51-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/allure-results/f5fafc06-80b0-454a-ac57-2f5c84eabd7b-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/BaseClasses/BaseWebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/BaseClasses/BaseWebTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/resources/CHROME.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/resources/CHROME.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/ImplementationClasses/AfdalAnalyticsSignInImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/ImplementationClasses/AfdalAnalyticsSignInImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/data/SystemProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/data/SystemProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/engine/webdriver/ChromeDriverProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/engine/webdriver/ChromeDriverProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/AfdalAnalyticsSignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/AfdalAnalyticsSignInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/AfdalAnalyticsSignUp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/IAfdalAnalyticsSignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/IAfdalAnalyticsSignInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/BaseClasses/AfdalAnalyticsBaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/BaseClasses/AfdalAnalyticsBaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/BaseClasses/AfdalAnalyticsLoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/BaseClasses/AfdalAnalyticsLoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/BaseClasses/AnnotationTransformer.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/BaseClasses/AnnotationTransformer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/BaseClasses/BaseWebTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/BaseClasses/BaseWebTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/CHROME.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/CHROME.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/BaseClasses/Feature.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/BaseClasses/Feature.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/BaseClasses/FeatureExecutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/BaseClasses/FeatureExecutor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/ImplementationClasses/AfdalAnalyticsSignInImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/ImplementationClasses/AfdalAnalyticsSignInImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/Reporting/ExtentManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/Reporting/ExtentManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/Reporting/ExtentTestManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/Reporting/ExtentTestManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/Reporting/Models/TestCaseKeys.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/Reporting/Models/TestCaseKeys.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/Reporting/TestNGCustomReport$ClassResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/Reporting/TestNGCustomReport$ClassResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/Reporting/TestNGCustomReport$MethodResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/Reporting/TestNGCustomReport$MethodResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/Reporting/TestNGCustomReport$SuiteResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/Reporting/TestNGCustomReport$SuiteResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/Reporting/TestNGCustomReport$TestResult$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/Reporting/TestNGCustomReport$TestResult$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/Reporting/TestNGCustomReport$TestResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/Reporting/TestNGCustomReport$TestResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/Reporting/TestNGCustomReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/Reporting/TestNGCustomReport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/Reporting/customOperation/CustomTableExtentReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/Reporting/customOperation/CustomTableExtentReport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/Reporting/customOperation/DataInsertionExtentReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/Reporting/customOperation/DataInsertionExtentReport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/data/DataModels/TableColumnType.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/data/DataModels/TableColumnType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/data/StringUtilInternal.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/data/StringUtilInternal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/data/SystemProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/data/SystemProperties.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/DriverBinaryManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/DriverBinaryManager$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/DriverBinaryManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/DriverBinaryManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/DriverConfigurator$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/DriverConfigurator$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/DriverConfigurator.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/DriverConfigurator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/DriverDownloadDirManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/DriverDownloadDirManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/DriverUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/DriverUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/RemoteDriverState.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/RemoteDriverState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/RetryAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/RetryAnalyzer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/webdriver/BrowserStackDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/webdriver/BrowserStackDriver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/webdriver/BrowserStackDriverImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/webdriver/BrowserStackDriverImplementation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/webdriver/ChromeDriverProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/webdriver/ChromeDriverProvider.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/webdriver/ChromeRemoteDriverProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/webdriver/ChromeRemoteDriverProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/webdriver/DriverType.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/webdriver/DriverType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/webdriver/EdgeDriverProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/webdriver/EdgeDriverProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/webdriver/EdgeRemoteDriverProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/webdriver/EdgeRemoteDriverProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/webdriver/FirefoxDriverProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/webdriver/FirefoxDriverProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/webdriver/FirefoxRemoteDriverProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/webdriver/FirefoxRemoteDriverProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/webdriver/IEDriverProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/webdriver/IEDriverProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/webdriver/RemoteDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/engine/webdriver/RemoteDriver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/PageFactoryClasses/AfdalPageFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/PageFactoryClasses/AfdalPageFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/PageFactoryClasses/PageFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/PageFactoryClasses/PageFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/pages/AfdalAnalyticsSignInPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/pages/AfdalAnalyticsSignInPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/pages/IAfdalAnalyticsSignInPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/pages/IAfdalAnalyticsSignInPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/test/HomePage/LoginPageUiValidation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/surefire-reports/Afdal Analytics Validation Suite/Afdal Analytics Login Page Ui Validation.html" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/surefire-reports/Afdal Analytics Validation Suite/Afdal Analytics Login Page Ui Validation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/surefire-reports/Afdal Analytics Validation Suite/Afdal Analytics Login Page Ui Validation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/surefire-reports/Afdal Analytics Validation Suite/Afdal Analytics Login Page Ui Validation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/surefire-reports/TestSuite.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/surefire-reports/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/surefire-reports/old/Afdal Analytics Validation Suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/surefire-reports/old/Afdal Analytics Validation Suite/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/surefire-reports/old/Afdal Analytics Validation Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/surefire-reports/old/Afdal Analytics Validation Suite/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/surefire-reports/old/Afdal Analytics Validation Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/surefire-reports/old/Afdal Analytics Validation Suite/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/surefire-reports/old/Afdal Analytics Validation Suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/surefire-reports/old/Afdal Analytics Validation Suite/testng.xml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/utilities/AllureListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/utilities/AllureListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/utilities/DateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/utilities/DateUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/utilities/EnumUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/utilities/EnumUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/utilities/ExcelCRUDOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/utilities/ExcelCRUDOperations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/utilities/GetRandomDataGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/utilities/GetRandomDataGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/utilities/JavaScriptFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/utilities/JavaScriptFunction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/utilities/LoggingHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/utilities/LoggingHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/utilities/MapCompareMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/utilities/MapCompareMethods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/utilities/SeleniumUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/utilities/SeleniumUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/utilities/StringUtilInternal.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/utilities/StringUtilInternal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/utilities/TestListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/utilities/TestListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/utilities/UtilOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/utilities/UtilOperations.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,8 +97,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -159,16 +176,79 @@
       <command value="mvn clean test -Dbrowser=FF" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/WEB_UI_Module/src/main/resources/CHROME.xml">
-    <configuration name="C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/Mobile_Module/src/test/resources/Android.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Mobile_Module" />
+  <component name="RunManager" selected="TestNG.AfdalLoginPageUiValidation">
+    <configuration name="AfdalLoginPageUiValidation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WEB_UI_Module" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/Mobile_Module/src/test/resources/Android.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.HomePage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="test.HomePage" />
+      <option name="MAIN_CLASS_NAME" value="test.HomePage.AfdalLoginPageUiValidation" />
       <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true -DBASE_URI=&quot;https://api.spotify.com&quot; -DACCOUNT_BASE_URI=&quot;https://accounts.spotify.com&quot;" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AfdalLoginPageUiValidation.verifyHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WEB_UI_Module" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.HomePage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="test.HomePage" />
+      <option name="MAIN_CLASS_NAME" value="test.HomePage.AfdalLoginPageUiValidation" />
+      <option name="METHOD_NAME" value="verifyHomePage" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true -DBASE_URI=&quot;https://api.spotify.com&quot; -DACCOUNT_BASE_URI=&quot;https://accounts.spotify.com&quot;" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AfdalSignupPageValidation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WEB_UI_Module" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.HomePage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="test.HomePage" />
+      <option name="MAIN_CLASS_NAME" value="test.HomePage.AfdalSignupPageValidation" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true -DBASE_URI=&quot;https://api.spotify.com&quot; -DACCOUNT_BASE_URI=&quot;https://accounts.spotify.com&quot;" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
@@ -191,56 +271,6 @@
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="SUITE" />
-      <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true -DBASE_URI=&quot;https://api.spotify.com&quot; -DACCOUNT_BASE_URI=&quot;https://accounts.spotify.com&quot;" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/WEB_UI_Module/src/main/resources/SAFARI.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="WEB_UI_Module" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/WEB_UI_Module/src/main/resources/SAFARI.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true -DBASE_URI=&quot;https://api.spotify.com&quot; -DACCOUNT_BASE_URI=&quot;https://accounts.spotify.com&quot;" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomerDetailsFromRecentActivityTab" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="WEB_UI_Module" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.HomePage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="test.HomePage" />
-      <option name="MAIN_CLASS_NAME" value="test.HomePage.CustomerDetailsFromRecentActivityTab" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true -DBASE_URI=&quot;https://api.spotify.com&quot; -DACCOUNT_BASE_URI=&quot;https://accounts.spotify.com&quot;" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
@@ -304,19 +334,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/Mobile_Module/src/test/resources/Android.xml" />
       <item itemvalue="TestNG.C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/WEB_UI_Module/src/main/resources/CHROME.xml" />
-      <item itemvalue="TestNG.C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/WEB_UI_Module/src/main/resources/SAFARI.xml" />
-      <item itemvalue="TestNG.CustomerDetailsFromRecentActivityTab" />
       <item itemvalue="TestNG.NewLoanFromCustomerTab" />
+      <item itemvalue="TestNG.AfdalLoginPageUiValidation" />
+      <item itemvalue="TestNG.AfdalLoginPageUiValidation.verifyHomePage" />
+      <item itemvalue="TestNG.AfdalSignupPageValidation" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AfdalLoginPageUiValidation" />
+        <item itemvalue="TestNG.AfdalSignupPageValidation" />
+        <item itemvalue="TestNG.AfdalLoginPageUiValidation.verifyHomePage" />
         <item itemvalue="TestNG.C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/WEB_UI_Module/src/main/resources/CHROME.xml" />
         <item itemvalue="TestNG.NewLoanFromCustomerTab" />
-        <item itemvalue="TestNG.C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/Mobile_Module/src/test/resources/Android.xml" />
-        <item itemvalue="TestNG.CustomerDetailsFromRecentActivityTab" />
-        <item itemvalue="TestNG.C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/WEB_UI_Module/src/main/resources/SAFARI.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -328,13 +358,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627924201276</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Validation test case Report">
-      <created>1643310912981</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1643310912982</updated>
     </task>
     <task id="LOCAL-00059" summary="Validation test case Report v1">
       <created>1643310931473</created>
@@ -672,7 +695,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649992688995</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="Third commit">
+      <created>1652720907340</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1652720907340</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -690,7 +720,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/MyNavidGaid_automation" />
     </ignored-roots>
-    <MESSAGE value="Mobile Test cases" />
     <MESSAGE value="Mobile Test cases v2" />
     <MESSAGE value="Mobile Test cases v3" />
     <MESSAGE value="Mobile Test cases v4" />
@@ -715,7 +744,8 @@
     <MESSAGE value="Fixed the test case" />
     <MESSAGE value="Report title" />
     <MESSAGE value="Test cases fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test cases fixed" />
+    <MESSAGE value="Third commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Third commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/README_md$NewLoanFromActivityCenter.ic" NAME="NewLoanFromActivityCenter Coverage Results" MODIFIED="1642441795656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

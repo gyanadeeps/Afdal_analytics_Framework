@@ -33,7 +33,8 @@ public interface SystemProperties {
     String REMOTE_URL = System.getProperty("remote.url", "https://" + AUTOMATE_USERNAME + ":" + AUTOMATE_ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub");
 
     String AUTHENTICATION_REQUIRED=System.getProperty("Authentication_Required", "Yes");
-    String AFDALANALYTICS_URL =System.getProperty("URL", "https://www.afdalanalytics.com/");
+//    String AFDALANALYTICS_URL =System.getProperty("URL", "https://www.afdalanalytics.com/");
+    String AFDALANALYTICS_URL =System.getProperty("URL", "https://staging.afdalanalytics.com/");
     String AWS_BUILD = System.getProperty("AWS_BUILD", "sched");
     boolean SCREENSHOT_ON_EVERY_STEP = Boolean.parseBoolean(getProperty("screenshot_on_every_step"));
 
