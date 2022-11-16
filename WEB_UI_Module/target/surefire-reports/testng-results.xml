@@ -1,24 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="3" total="4" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-16T17:01:04Z" name="Afdal Analytics Validation Suite" finished-at="2022-05-16T17:01:24Z" duration-ms="19424">
+  <suite started-at="2022-11-15T17:43:56Z" name="Afdal Analytics Validation Suite" finished-at="2022-11-15T17:44:32Z" duration-ms="35938">
     <groups>
     </groups>
-    <test started-at="2022-05-16T17:01:04Z" name="Afdal Analytics Login Page Ui Validation" finished-at="2022-05-16T17:01:24Z" duration-ms="19424">
-      <class name="test.HomePage.AfdalLoginPageUiValidation">
-        <test-method is-config="true" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:test.HomePage.AfdalLoginPageUiValidation@6c806c8b]" started-at="2022-05-16T17:01:04Z" name="beforeSuite" finished-at="2022-05-16T17:01:06Z" duration-ms="1419" status="PASS">
+    <test started-at="2022-11-15T17:43:56Z" name="Afdal Analytics Login Page Ui Validation" finished-at="2022-11-15T17:44:32Z" duration-ms="35938">
+      <class name="test.HomePage.AfdalSignupPageValidation">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:test.HomePage.AfdalSignupPageValidation@27a2a089]" started-at="2022-11-15T17:43:57Z" name="beforeMethod" description="Initialize web driver configuration" finished-at="2022-11-15T17:43:57Z" duration-ms="33" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2cd388f5]]>
+                <![CDATA[public void test.HomePage.AfdalSignupPageValidation.verifySignupPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifySignupPage()[pri:0, instance:test.HomePage.AfdalSignupPageValidation@27a2a089]" started-at="2022-11-15T17:43:57Z" name="verifySignupPage" description="Verify Signup Page" finished-at="2022-11-15T17:44:23Z" duration-ms="26618" status="FAIL">
+          <exception class="com.codeborne.selenide.ex.ElementNotFound">
+            <message>
+              <![CDATA[Element not found {By.xpath: //p[contains(text(),"ان كنت بالفعل مستخدم؟ ")]}
+Expected: text 'ان كنت بالفعل مستخدم؟ '
+Timeout: 10 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),"ان كنت بالفعل مستخدم؟ ")]"}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[Element not found {By.xpath: //p[contains(text(),"ان كنت بالفعل مستخدم؟ ")]}
+Expected: text 'ان كنت بالفعل مستخدم؟ '
+Timeout: 10 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),"ان كنت بالفعل مستخدم؟ ")]"}
+at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:37)
+at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:100)
+at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:65)
+at com.codeborne.selenide.commands.Should.execute(Should.java:24)
+at com.codeborne.selenide.commands.Should.execute(Should.java:10)
+at com.codeborne.selenide.commands.Commands.execute(Commands.java:148)
+at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:99)
+at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
+at com.sun.proxy.$Proxy20.shouldHave(Unknown Source)
+at pageobjects.pages.AfdalAnalyticsSignUpPage.Signup_Verify_UI(AfdalAnalyticsSignUpPage.java:88)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at utilities.LoggingHandler.invoke(LoggingHandler.java:42)
+at com.sun.proxy.$Proxy21.Signup_Verify_UI(Unknown Source)
+at ImplementationClasses.AfdalAnalyticsSignUpImpl.execute(AfdalAnalyticsSignUpImpl.java:26)
+at BaseClasses.FeatureExecutor.performFeature(FeatureExecutor.java:30)
+at BaseClasses.FeatureExecutor.lambda$execute$0(FeatureExecutor.java:22)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at BaseClasses.FeatureExecutor.execute(FeatureExecutor.java:20)
+at BaseClasses.AfdalAnalyticsBaseTest.trigger(AfdalAnalyticsBaseTest.java:27)
+at test.HomePage.AfdalSignupPageValidation.verifySignupPage(AfdalSignupPageValidation.java:15)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),"ان كنت بالفعل مستخدم؟ ")]"}
+  (Session info: chrome=107.0.5304.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VPLVM1', ip: '10.1.0.8', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\team2\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59057}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 93fc537b4137e5e1d7dee99f6939289a
+*** Element info: {Using=xpath, value=//p[contains(text(),"ان كنت بالفعل مستخدم؟ ")]}
+at jdk.internal.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:30)
+at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:74)
+at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:50)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.codeborne.selenide.ex.ElementNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignupPage -->
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method, org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:test.HomePage.AfdalSignupPageValidation@27a2a089]" started-at="2022-11-15T17:44:24Z" name="tearDown" description="Close driver" finished-at="2022-11-15T17:44:29Z" duration-ms="4977" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.HomePage.AfdalSignupPageValidation.verifySignupPage()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifySignupPage status=FAILURE method=AfdalSignupPageValidation.verifySignupPage()[pri:0, instance:test.HomePage.AfdalSignupPageValidation@27a2a089] output={null}]]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@51f95f0d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.HomePage.AfdalSignupPageValidation -->
+      <class name="test.HomePage.AfdalLoginPageUiValidation">
+        <test-method is-config="true" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:test.HomePage.AfdalLoginPageUiValidation@24b4d544]" started-at="2022-11-15T17:43:56Z" name="beforeSuite" finished-at="2022-11-15T17:43:57Z" duration-ms="811" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@51f95f0d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:test.HomePage.AfdalLoginPageUiValidation@6c806c8b]" started-at="2022-05-16T17:01:06Z" name="beforeMethod" description="Initialize web driver configuration" finished-at="2022-05-16T17:01:06Z" duration-ms="33" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:test.HomePage.AfdalLoginPageUiValidation@24b4d544]" started-at="2022-11-15T17:43:57Z" name="beforeMethod" description="Initialize web driver configuration" finished-at="2022-11-15T17:43:57Z" duration-ms="24" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,36 +144,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyHomePage()[pri:0, instance:test.HomePage.AfdalLoginPageUiValidation@6c806c8b]" started-at="2022-05-16T17:01:06Z" name="verifyHomePage" description="Verify Login Page" finished-at="2022-05-16T17:01:20Z" duration-ms="13892" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHomePage -->
-        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method, org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:test.HomePage.AfdalLoginPageUiValidation@6c806c8b]" started-at="2022-05-16T17:01:21Z" name="tearDown" description="Close driver" finished-at="2022-05-16T17:01:24Z" duration-ms="2505" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void test.HomePage.AfdalLoginPageUiValidation.verifyHomePage()]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[TestResult name=verifyHomePage status=SUCCESS method=AfdalLoginPageUiValidation.verifyHomePage()[pri:0, instance:test.HomePage.AfdalLoginPageUiValidation@6c806c8b] output={null}]]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@2cd388f5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="getReport()[pri:0, instance:test.HomePage.AfdalLoginPageUiValidation@6c806c8b]" started-at="2022-05-16T17:01:24Z" name="getReport" finished-at="2022-05-16T17:01:24Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getReport()[pri:0, instance:test.HomePage.AfdalLoginPageUiValidation@24b4d544]" started-at="2022-11-15T17:44:32Z" name="getReport" finished-at="2022-11-15T17:44:32Z" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getReport -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test.HomePage.AfdalLoginPageUiValidation@6c806c8b]" started-at="2022-05-16T17:01:24Z" name="afterSuite" finished-at="2022-05-16T17:01:24Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test.HomePage.AfdalLoginPageUiValidation@24b4d544]" started-at="2022-11-15T17:44:32Z" name="afterSuite" finished-at="2022-11-15T17:44:32Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

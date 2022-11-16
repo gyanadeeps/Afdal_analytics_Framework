@@ -11,7 +11,6 @@ Reporting\TestNGCustomReport$ClassResult.class
 Reporting\customOperation\DataInsertionExtentReport.class
 Reporting\TestNGCustomReport.class
 Reporting\TestNGCustomReport$TestResult.class
-pageobjects\pages\AfdalAnalyticsSignUp.class
 utilities\DateUtil.class
 engine\DriverConfigurator$1.class
 BaseClasses\FeatureExecutor.class

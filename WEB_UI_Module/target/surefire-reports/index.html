@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Afdal_Analytics_Validation_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Afdal Analytics Validation Suite</span>
+              <span class="suite-name border-failed">Afdal Analytics Validation Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Afdal_Analytics_Validation_Suite" class="hide-methods passed suite-Afdal_Analytics_Validation_Suite"> (hide)</a> <!-- hide-methods passed suite-Afdal_Analytics_Validation_Suite -->
-                      <a href="#" panel-name="suite-Afdal_Analytics_Validation_Suite" class="show-methods passed suite-Afdal_Analytics_Validation_Suite"> (show)</a> <!-- show-methods passed suite-Afdal_Analytics_Validation_Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Afdal_Analytics_Validation_Suite" class="hide-methods failed suite-Afdal_Analytics_Validation_Suite"> (hide)</a> <!-- hide-methods failed suite-Afdal_Analytics_Validation_Suite -->
+                      <a href="#" panel-name="suite-Afdal_Analytics_Validation_Suite" class="show-methods failed suite-Afdal_Analytics_Validation_Suite"> (show)</a> <!-- show-methods failed suite-Afdal_Analytics_Validation_Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Afdal_Analytics_Validation_Suite">
+                    <div class="method-list-content failed suite-Afdal_Analytics_Validation_Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Afdal_Analytics_Validation_Suite" title="test.HomePage.AfdalLoginPageUiValidation" class="method navigator-link" hash-for-method="verifyHomePage">verifyHomePage</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Afdal_Analytics_Validation_Suite" title="test.HomePage.AfdalSignupPageValidation" class="method navigator-link" hash-for-method="verifySignupPage">verifySignupPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Afdal_Analytics_Validation_Suite -->
+                    </div> <!-- method-list-content failed suite-Afdal_Analytics_Validation_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,23 +117,74 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Afdal_Analytics_Validation_Suite" class="panel Afdal_Analytics_Validation_Suite">
-          <div class="suite-Afdal_Analytics_Validation_Suite-class-passed">
+          <div class="suite-Afdal_Analytics_Validation_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test.HomePage.AfdalLoginPageUiValidation</span>
+              <img src="failed.png"/>
+              <span class="class-name">test.HomePage.AfdalSignupPageValidation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyHomePage">
-                  </a> <!-- verifyHomePage -->
-                  <span class="method-name">verifyHomePage</span>
+                  <a name="verifySignupPage">
+                  </a> <!-- verifySignupPage -->
+                  <span class="method-name">verifySignupPage</span>
+                  <div class="stack-trace">Element not found {By.xpath: //p[contains(text(),&quot;ان كنت بالفعل مستخدم؟ &quot;)]}
+Expected: text &apos;ان كنت بالفعل مستخدم؟ &apos;
+Timeout: 10 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(text(),&quot;ان كنت بالفعل مستخدم؟ &quot;)]&quot;}
+	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:37)
+	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:100)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:65)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:24)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:10)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:148)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:99)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
+	at com.sun.proxy.$Proxy20.shouldHave(Unknown Source)
+	at pageobjects.pages.AfdalAnalyticsSignUpPage.Signup_Verify_UI(AfdalAnalyticsSignUpPage.java:88)
+	at utilities.LoggingHandler.invoke(LoggingHandler.java:42)
+	at com.sun.proxy.$Proxy21.Signup_Verify_UI(Unknown Source)
+	at ImplementationClasses.AfdalAnalyticsSignUpImpl.execute(AfdalAnalyticsSignUpImpl.java:26)
+	at BaseClasses.FeatureExecutor.performFeature(FeatureExecutor.java:30)
+	at BaseClasses.FeatureExecutor.lambda$execute$0(FeatureExecutor.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at BaseClasses.FeatureExecutor.execute(FeatureExecutor.java:20)
+	at BaseClasses.AfdalAnalyticsBaseTest.trigger(AfdalAnalyticsBaseTest.java:27)
+	at test.HomePage.AfdalSignupPageValidation.verifySignupPage(AfdalSignupPageValidation.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(text(),&quot;ان كنت بالفعل مستخدم؟ &quot;)]&quot;}
+  (Session info: chrome=107.0.5304.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VPLVM1&apos;, ip: &apos;10.1.0.8&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\team2\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59057}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 93fc537b4137e5e1d7dee99f6939289a
+*** Element info: {Using=xpath, value=//p[contains(text(),&quot;ان كنت بالفعل مستخدم؟ &quot;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:30)
+	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:74)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:50)
+	... 33 more
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
                   <em>
-(Verify Login Page)                  </em>
+(Verify Signup Page)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Afdal_Analytics_Validation_Suite-class-passed -->
+          </div> <!-- suite-Afdal_Analytics_Validation_Suite-class-failed -->
         </div> <!-- panel Afdal_Analytics_Validation_Suite -->
         <div panel-name="test-xml-Afdal_Analytics_Validation_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -150,6 +201,7 @@
   &lt;test thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;Afdal Analytics Login Page Ui Validation&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;test.HomePage.AfdalLoginPageUiValidation&quot;/&gt;
+      &lt;class name=&quot;test.HomePage.AfdalSignupPageValidation&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Afdal Analytics Login Page Ui Validation --&gt;
 &lt;/suite&gt; &lt;!-- Afdal Analytics Validation Suite --&gt;
@@ -163,7 +215,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Afdal Analytics Login Page Ui Validation (1 class)</span>
+                <span class="test-name">Afdal Analytics Login Page Ui Validation (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -191,14 +243,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyHomePage')
-data.setCell(0, 2, 'test.HomePage.AfdalLoginPageUiValidation')
-data.setCell(0, 3, 13892);
+data.setCell(0, 1, 'verifySignupPage')
+data.setCell(0, 2, 'test.HomePage.AfdalSignupPageValidation')
+data.setCell(0, 3, 26618);
 window.suiteTableData['Afdal_Analytics_Validation_Suite']= { tableData: data, tableDiv: 'times-div-Afdal_Analytics_Validation_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 26 seconds</span>
               <div id="times-div-Afdal_Analytics_Validation_Suite">
               </div> <!-- times-div-Afdal_Analytics_Validation_Suite -->
             </div> <!-- times-div -->
@@ -213,9 +265,20 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Afdal_Analytics_Validation_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test.HomePage.AfdalSignupPageValidation</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">getReport</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Afdal_Analytics_Validation_Suite" class="panel">
@@ -226,28 +289,52 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">test.HomePage.AfdalLoginPageUiValidation</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">beforeSuite(org.testng.TestRunner@2cd388f5)</span>
+                <span class="method-name">beforeSuite(org.testng.TestRunner@51f95f0d)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void test.HomePage.AfdalLoginPageUiValidation.verifyHomePage())</span>
-                <span class="method-start">1503 ms</span>
+                <span class="method-start">846 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.HomePage.AfdalSignupPageValidation</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void test.HomePage.AfdalSignupPageValidation.verifySignupPage())</span>
+                <span class="method-start">849 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyHomePage</span>
-                <span class="method-start">1803 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifySignupPage</span>
+                <span class="method-start">1064 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.HomePage.AfdalLoginPageUiValidation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyHomePage</span>
+                <span class="method-start">1067 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.HomePage.AfdalSignupPageValidation</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown(public void test.HomePage.AfdalLoginPageUiValidation.verifyHomePage(), [TestResult name=verifyHomePa...)</span>
-                <span class="method-start">16901 ms</span>
+                <span class="method-name">tearDown(public void test.HomePage.AfdalSignupPageValidation.verifySignupPage(), [TestResult name=verifySignu...)</span>
+                <span class="method-start">28491 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.HomePage.AfdalLoginPageUiValidation</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">getReport</span>
-                <span class="method-start">19411 ms</span>
+                <span class="method-start">35921 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">19480 ms</span>
+                <span class="method-start">36075 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

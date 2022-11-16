@@ -57,7 +57,7 @@ public class ChromeDriverProvider implements WebDriverProvider {
         //System.err.println("Chrome driver Provider Local");
         options.addArguments("--window-size=1920,1080");
        // options.addArguments("--window-size=480,620");
-//       options.addArguments("--headless");
+       options.addArguments("--headless");
         chromePrefs.put("prefs", prefs);
         options.setExperimentalOption("prefs", chromePrefs);
         options.setExperimentalOption("useAutomationExtension", false);

@@ -61,8 +61,7 @@
                             -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                         </argLine>
                         <suiteXmlFiles>
-                            <suiteXmlFile>src/main/resources/CHROME.xml</suiteXmlFile>
-                        </suiteXmlFiles>
+                            <suiteXmlFile>src/main/resources/${suiteXmlFile}.xml</suiteXmlFile>                        </suiteXmlFiles>
                     </configuration>
 
                 </plugin>
