@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Afdal Analytics Validation Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="Reporting.TestNGCustomReport"/>
+  </listeners>
+  <test thread-count="2" parallel="classes" name="Afdal Analytics Login Page Ui Validation(failed)" verbose="0">
+    <classes>
+      <class name="test.HomePage.AfdalSignupPageValidation">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="getReport"/>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="beforeMethod"/>
+          <include name="verifySignupPage"/>
+        </methods>
+      </class> <!-- test.HomePage.AfdalSignupPageValidation -->
+    </classes>
+  </test> <!-- Afdal Analytics Login Page Ui Validation(failed) -->
+</suite> <!-- Failed suite [Afdal Analytics Validation Suite] -->

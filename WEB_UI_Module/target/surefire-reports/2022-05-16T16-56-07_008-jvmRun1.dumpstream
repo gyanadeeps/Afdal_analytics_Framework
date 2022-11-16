@@ -1,0 +1,419 @@
+# Created at 2022-05-16T16:59:52.670
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+# Created at 2022-05-16T17:00:13.910
+Unexpected IOException with stream: [
+
+# Created at 2022-05-16T17:00:13.912
+Unexpected IOException with stream: 1
+
+# Created at 2022-05-16T17:00:13.914
+Unexpected IOException with stream: 6
+
+# Created at 2022-05-16T17:00:13.915
+Unexpected IOException with stream: 5
+
+# Created at 2022-05-16T17:00:13.916
+Unexpected IOException with stream: 2
+
+# Created at 2022-05-16T17:00:13.918
+Unexpected IOException with stream: 7
+
+# Created at 2022-05-16T17:00:13.919
+Unexpected IOException with stream: 2
+
+# Created at 2022-05-16T17:00:13.920
+Unexpected IOException with stream: 0
+
+# Created at 2022-05-16T17:00:13.921
+Unexpected IOException with stream: 4
+
+# Created at 2022-05-16T17:00:13.922
+Unexpected IOException with stream: 1
+
+# Created at 2022-05-16T17:00:13.923
+Unexpected IOException with stream: 3
+
+# Created at 2022-05-16T17:00:13.924
+Unexpected IOException with stream: .
+
+# Created at 2022-05-16T17:00:13.926
+Unexpected IOException with stream: 9
+
+# Created at 2022-05-16T17:00:13.927
+Unexpected IOException with stream: 0
+
+# Created at 2022-05-16T17:00:13.928
+Unexpected IOException with stream: 4
+
+# Created at 2022-05-16T17:00:13.929
+Unexpected IOException with stream: ]
+
+# Created at 2022-05-16T17:00:13.930
+Unexpected IOException with stream: [
+
+# Created at 2022-05-16T17:00:13.931
+Unexpected IOException with stream: S
+
+# Created at 2022-05-16T17:00:13.932
+Unexpected IOException with stream: E
+
+# Created at 2022-05-16T17:00:13.933
+Unexpected IOException with stream: V
+
+# Created at 2022-05-16T17:00:13.934
+Unexpected IOException with stream: E
+
+# Created at 2022-05-16T17:00:13.935
+Unexpected IOException with stream: R
+
+# Created at 2022-05-16T17:00:13.936
+Unexpected IOException with stream: E
+
+# Created at 2022-05-16T17:00:13.937
+Unexpected IOException with stream: ]
+
+# Created at 2022-05-16T17:00:13.938
+Unexpected IOException with stream: :
+
+# Created at 2022-05-16T17:00:13.939
+Unexpected IOException with stream:  
+
+# Created at 2022-05-16T17:00:13.940
+Unexpected IOException with stream: U
+
+# Created at 2022-05-16T17:00:13.941
+Unexpected IOException with stream: n
+
+# Created at 2022-05-16T17:00:13.942
+Unexpected IOException with stream: a
+
+# Created at 2022-05-16T17:00:13.944
+Unexpected IOException with stream: b
+
+# Created at 2022-05-16T17:00:13.946
+Unexpected IOException with stream: l
+
+# Created at 2022-05-16T17:00:13.947
+Unexpected IOException with stream: e
+
+# Created at 2022-05-16T17:00:13.948
+Unexpected IOException with stream:  
+
+# Created at 2022-05-16T17:00:13.949
+Unexpected IOException with stream: t
+
+# Created at 2022-05-16T17:00:13.951
+Unexpected IOException with stream: o
+
+# Created at 2022-05-16T17:00:13.952
+Unexpected IOException with stream:  
+
+# Created at 2022-05-16T17:00:13.954
+Unexpected IOException with stream: r
+
+# Created at 2022-05-16T17:00:13.955
+Unexpected IOException with stream: e
+
+# Created at 2022-05-16T17:00:13.957
+Unexpected IOException with stream: c
+
+# Created at 2022-05-16T17:00:13.958
+Unexpected IOException with stream: e
+
+# Created at 2022-05-16T17:00:13.959
+Unexpected IOException with stream: i
+
+# Created at 2022-05-16T17:00:13.960
+Unexpected IOException with stream: v
+
+# Created at 2022-05-16T17:00:13.962
+Unexpected IOException with stream: e
+
+# Created at 2022-05-16T17:00:13.963
+Unexpected IOException with stream:  
+
+# Created at 2022-05-16T17:00:13.964
+Unexpected IOException with stream: m
+
+# Created at 2022-05-16T17:00:13.965
+Unexpected IOException with stream: e
+
+# Created at 2022-05-16T17:00:13.966
+Unexpected IOException with stream: s
+
+# Created at 2022-05-16T17:00:13.967
+Unexpected IOException with stream: s
+
+# Created at 2022-05-16T17:00:13.969
+Unexpected IOException with stream: a
+
+# Created at 2022-05-16T17:00:13.970
+Unexpected IOException with stream: g
+
+# Created at 2022-05-16T17:00:13.972
+Unexpected IOException with stream: e
+
+# Created at 2022-05-16T17:00:13.973
+Unexpected IOException with stream:  
+
+# Created at 2022-05-16T17:00:13.976
+Unexpected IOException with stream: f
+
+# Created at 2022-05-16T17:00:13.977
+Unexpected IOException with stream: r
+
+# Created at 2022-05-16T17:00:13.978
+Unexpected IOException with stream: o
+
+# Created at 2022-05-16T17:00:13.979
+Unexpected IOException with stream: m
+
+# Created at 2022-05-16T17:00:13.980
+Unexpected IOException with stream:  
+
+# Created at 2022-05-16T17:00:13.981
+Unexpected IOException with stream: r
+
+# Created at 2022-05-16T17:00:13.982
+Unexpected IOException with stream: e
+
+# Created at 2022-05-16T17:00:13.983
+Unexpected IOException with stream: n
+
+# Created at 2022-05-16T17:00:13.985
+Unexpected IOException with stream: d
+
+# Created at 2022-05-16T17:00:13.986
+Unexpected IOException with stream: e
+
+# Created at 2022-05-16T17:00:13.987
+Unexpected IOException with stream: r
+
+# Created at 2022-05-16T17:00:13.988
+Unexpected IOException with stream: e
+
+# Created at 2022-05-16T17:00:13.989
+Unexpected IOException with stream: r
+
+# Created at 2022-05-16T17:00:13.990
+Unexpected IOException with stream: 
+
+# Created at 2022-05-16T17:00:13.991
+Unexpected IOException with stream: 
+
+
+# Created at 2022-05-16T17:00:19.959
+Unexpected IOException with stream: May 16, 2022 5:00:19 PM utilities.TestListener onTestFailure
+WARNING: [0;31m**************** Test Failed -> verifyHomePage, in thread ->  17 ****************[0m
+
+
+# Created at 2022-05-16T17:00:19.976
+Unexpected IOException with stream: May 16, 2022 5:00:19 PM engine.DriverUtils getScreenshot
+INFO: Trying to get screenshot in thread [17]
+
+
+# Created at 2022-05-16T17:00:19.978
+Unexpected IOException with stream: May 16, 2022 5:00:19 PM engine.DriverUtils getScreenshot
+INFO: WebDriver is opened in thread [17], trying to get screenshot
+
+
+# Created at 2022-05-16T17:00:24.004
+Unexpected IOException with stream: May 16, 2022 5:00:24 PM utilities.TestListener onTestFailure
+WARNING: [0;31m**************** Test Failed -> verifyHomePage, in thread ->  17 ****************[0m
+
+
+# Created at 2022-05-16T17:00:24.006
+Unexpected IOException with stream: May 16, 2022 5:00:24 PM engine.DriverUtils getScreenshot
+INFO: Trying to get screenshot in thread [17]
+
+
+# Created at 2022-05-16T17:00:24.009
+Unexpected IOException with stream: May 16, 2022 5:00:24 PM engine.DriverUtils getScreenshot
+INFO: WebDriver is opened in thread [17], trying to get screenshot
+
+
+# Created at 2022-05-16T17:00:28.027
+Unexpected IOException with stream: Exception in thread "TestNG-test=Afdal Analytics Login Page Ui Validation-1" 
+
+# Created at 2022-05-16T17:00:28.028
+Unexpected IOException with stream: After test
+
+
+# Created at 2022-05-16T17:00:28.029
+Unexpected IOException with stream: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: headless chrome=101.0.4951.54)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VPLVM1', ip: '10.1.0.8', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\team2\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52577}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5980be24239ec1a4cdea408680c9f90d
+
+# Created at 2022-05-16T17:00:28.031
+Unexpected IOException with stream: 
+
+
+# Created at 2022-05-16T17:00:28.032
+Unexpected IOException with stream: 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+
+# Created at 2022-05-16T17:00:28.033
+Unexpected IOException with stream: 
+
+
+# Created at 2022-05-16T17:00:28.034
+Unexpected IOException with stream: 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+
+# Created at 2022-05-16T17:00:28.035
+Unexpected IOException with stream: 
+
+
+# Created at 2022-05-16T17:00:28.036
+Unexpected IOException with stream: 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+
+# Created at 2022-05-16T17:00:28.037
+Unexpected IOException with stream: 
+
+
+# Created at 2022-05-16T17:00:28.038
+Unexpected IOException with stream: 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+
+# Created at 2022-05-16T17:00:28.039
+Unexpected IOException with stream: 
+
+
+# Created at 2022-05-16T17:00:28.041
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+
+# Created at 2022-05-16T17:00:28.042
+Unexpected IOException with stream: 
+
+
+# Created at 2022-05-16T17:00:28.043
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+
+# Created at 2022-05-16T17:00:28.044
+Unexpected IOException with stream: 
+
+
+# Created at 2022-05-16T17:00:28.045
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+
+# Created at 2022-05-16T17:00:28.046
+Unexpected IOException with stream: 
+
+
+# Created at 2022-05-16T17:00:28.047
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+
+# Created at 2022-05-16T17:00:28.048
+Unexpected IOException with stream: 
+
+
+# Created at 2022-05-16T17:00:28.049
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+
+# Created at 2022-05-16T17:00:28.049
+Unexpected IOException with stream: 
+
+
+# Created at 2022-05-16T17:00:28.050
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+
+# Created at 2022-05-16T17:00:28.051
+Unexpected IOException with stream: 
+
+
+# Created at 2022-05-16T17:00:28.052
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+
+# Created at 2022-05-16T17:00:28.054
+Unexpected IOException with stream: 
+
+
+# Created at 2022-05-16T17:00:28.055
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+
+# Created at 2022-05-16T17:00:28.056
+Unexpected IOException with stream: 
+
+
+# Created at 2022-05-16T17:00:28.057
+Unexpected IOException with stream: 	at engine.DriverUtils.getScreenshot(DriverUtils.java:48)
+
+# Created at 2022-05-16T17:00:28.060
+Unexpected IOException with stream: 
+
+
+# Created at 2022-05-16T17:00:28.061
+Unexpected IOException with stream: 	at utilities.TestListener.onTestFailure(TestListener.java:51)
+
+# Created at 2022-05-16T17:00:28.064
+Unexpected IOException with stream: 
+
+
+# Created at 2022-05-16T17:00:28.065
+Unexpected IOException with stream: 	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:67)
+
+# Created at 2022-05-16T17:00:28.067
+Unexpected IOException with stream: 
+
+
+# Created at 2022-05-16T17:00:28.071
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+
+# Created at 2022-05-16T17:00:28.073
+Unexpected IOException with stream: 
+
+
+# Created at 2022-05-16T17:00:28.075
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1042)
+
+# Created at 2022-05-16T17:00:28.076
+Unexpected IOException with stream: 
+
+
+# Created at 2022-05-16T17:00:28.077
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+
+# Created at 2022-05-16T17:00:28.078
+Unexpected IOException with stream: 
+
+
+# Created at 2022-05-16T17:00:28.079
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+
+# Created at 2022-05-16T17:00:28.081
+Unexpected IOException with stream: 
+
+
+# Created at 2022-05-16T17:00:28.101
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+
+# Created at 2022-05-16T17:00:28.103
+Unexpected IOException with stream: 
+
+
+# Created at 2022-05-16T17:00:28.111
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+
+# Created at 2022-05-16T17:00:28.112
+Unexpected IOException with stream: 
+
+
+# Created at 2022-05-16T17:00:28.114
+Unexpected IOException with stream: 	at java.base/java.lang.Thread.run(Thread.java:834)
+
+# Created at 2022-05-16T17:00:28.115
+Unexpected IOException with stream: 
+
+
+# Created at 2022-05-16T17:00:28.309
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGXmlTestSuite,TestSuite,null,null,null
+
+

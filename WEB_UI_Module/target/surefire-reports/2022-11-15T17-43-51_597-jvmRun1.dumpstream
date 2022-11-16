@@ -1,0 +1,624 @@
+# Created at 2022-11-15T17:44:04.171
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+# Created at 2022-11-15T17:44:04.977
+Unexpected IOException with stream: Nov 15, 2022 5:44:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+
+
+# Created at 2022-11-15T17:44:09.100
+Unexpected IOException with stream: Nov 15, 2022 5:44:09 PM BaseClasses.FeatureExecutor performFeature
+INFO: INIT test-------> ImplementationClasses.AfdalAnalyticsSignUpImpl@26b4947b in thread 17
+
+
+# Created at 2022-11-15T17:44:09.463
+Unexpected IOException with stream: Nov 15, 2022 5:44:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+
+
+# Created at 2022-11-15T17:44:11.271
+Unexpected IOException with stream: Nov 15, 2022 5:44:10 PM BaseClasses.FeatureExecutor performFeature
+INFO: Execute test-------> ImplementationClasses.AfdalAnalyticsSignUpImpl@26b4947b in thread 17
+
+
+# Created at 2022-11-15T17:44:14.710
+Unexpected IOException with stream: Nov 15, 2022 5:44:14 PM BaseClasses.FeatureExecutor performFeature
+INFO: INIT test-------> ImplementationClasses.AfdalAnalyticsSignInImpl@171a34e8 in thread 16
+
+
+# Created at 2022-11-15T17:44:15.257
+Unexpected IOException with stream: [
+
+# Created at 2022-11-15T17:44:15.387
+Unexpected IOException with stream: 1
+
+# Created at 2022-11-15T17:44:15.390
+Unexpected IOException with stream: 6
+
+# Created at 2022-11-15T17:44:15.392
+Unexpected IOException with stream: 6
+
+# Created at 2022-11-15T17:44:15.393
+Unexpected IOException with stream: 8
+
+# Created at 2022-11-15T17:44:15.394
+Unexpected IOException with stream: 5
+
+# Created at 2022-11-15T17:44:15.395
+Unexpected IOException with stream: 3
+
+# Created at 2022-11-15T17:44:15.396
+Unexpected IOException with stream: 4
+
+# Created at 2022-11-15T17:44:15.399
+Unexpected IOException with stream: 2
+
+# Created at 2022-11-15T17:44:15.400
+Unexpected IOException with stream: 5
+
+# Created at 2022-11-15T17:44:15.421
+Unexpected IOException with stream: 5
+
+# Created at 2022-11-15T17:44:15.425
+Unexpected IOException with stream: .
+
+# Created at 2022-11-15T17:44:15.427
+Unexpected IOException with stream: 2
+
+# Created at 2022-11-15T17:44:15.429
+Unexpected IOException with stream: 5
+
+# Created at 2022-11-15T17:44:15.490
+Unexpected IOException with stream: 4
+
+# Created at 2022-11-15T17:44:15.493
+Unexpected IOException with stream: ]
+
+# Created at 2022-11-15T17:44:15.493
+Unexpected IOException with stream: [
+
+# Created at 2022-11-15T17:44:15.496
+Unexpected IOException with stream: S
+
+# Created at 2022-11-15T17:44:15.504
+Unexpected IOException with stream: E
+
+# Created at 2022-11-15T17:44:15.510
+Unexpected IOException with stream: V
+
+# Created at 2022-11-15T17:44:15.512
+Unexpected IOException with stream: E
+
+# Created at 2022-11-15T17:44:15.535
+Unexpected IOException with stream: R
+
+# Created at 2022-11-15T17:44:15.538
+Unexpected IOException with stream: E
+
+# Created at 2022-11-15T17:44:15.541
+Unexpected IOException with stream: ]
+
+# Created at 2022-11-15T17:44:15.550
+Unexpected IOException with stream: :
+
+# Created at 2022-11-15T17:44:15.552
+Unexpected IOException with stream:  
+
+# Created at 2022-11-15T17:44:15.554
+Unexpected IOException with stream: U
+
+# Created at 2022-11-15T17:44:15.572
+Unexpected IOException with stream: n
+
+# Created at 2022-11-15T17:44:15.574
+Unexpected IOException with stream: a
+
+# Created at 2022-11-15T17:44:15.577
+Unexpected IOException with stream: Nov 15, 2022 5:44:15 PM utilities.TestListener onTestFailure
+WARNING: [0;31m**************** Test Failed -> verifyHomePage, in thread ->  16 ****************[0m
+
+
+# Created at 2022-11-15T17:44:15.584
+Unexpected IOException with stream: b
+
+# Created at 2022-11-15T17:44:15.595
+Unexpected IOException with stream: l
+
+# Created at 2022-11-15T17:44:15.598
+Unexpected IOException with stream: e
+
+# Created at 2022-11-15T17:44:15.599
+Unexpected IOException with stream:  
+
+# Created at 2022-11-15T17:44:15.605
+Unexpected IOException with stream: Nov 15, 2022 5:44:15 PM engine.DriverUtils getScreenshot
+INFO: Trying to get screenshot in thread [16]
+
+
+# Created at 2022-11-15T17:44:15.608
+Unexpected IOException with stream: t
+
+# Created at 2022-11-15T17:44:15.608
+Unexpected IOException with stream: o
+
+# Created at 2022-11-15T17:44:15.617
+Unexpected IOException with stream:  
+
+# Created at 2022-11-15T17:44:15.619
+Unexpected IOException with stream: Nov 15, 2022 5:44:15 PM engine.DriverUtils getScreenshot
+INFO: WebDriver is opened in thread [16], trying to get screenshot
+
+
+# Created at 2022-11-15T17:44:15.619
+Unexpected IOException with stream: r
+
+# Created at 2022-11-15T17:44:15.620
+Unexpected IOException with stream: e
+
+# Created at 2022-11-15T17:44:15.621
+Unexpected IOException with stream: c
+
+# Created at 2022-11-15T17:44:15.624
+Unexpected IOException with stream: e
+
+# Created at 2022-11-15T17:44:15.626
+Unexpected IOException with stream: i
+
+# Created at 2022-11-15T17:44:15.627
+Unexpected IOException with stream: v
+
+# Created at 2022-11-15T17:44:15.629
+Unexpected IOException with stream: e
+
+# Created at 2022-11-15T17:44:15.631
+Unexpected IOException with stream:  
+
+# Created at 2022-11-15T17:44:15.632
+Unexpected IOException with stream: m
+
+# Created at 2022-11-15T17:44:15.634
+Unexpected IOException with stream: e
+
+# Created at 2022-11-15T17:44:15.634
+Unexpected IOException with stream: s
+
+# Created at 2022-11-15T17:44:15.635
+Unexpected IOException with stream: s
+
+# Created at 2022-11-15T17:44:15.636
+Unexpected IOException with stream: a
+
+# Created at 2022-11-15T17:44:15.637
+Unexpected IOException with stream: g
+
+# Created at 2022-11-15T17:44:15.638
+Unexpected IOException with stream: e
+
+# Created at 2022-11-15T17:44:15.639
+Unexpected IOException with stream:  
+
+# Created at 2022-11-15T17:44:15.641
+Unexpected IOException with stream: f
+
+# Created at 2022-11-15T17:44:15.642
+Unexpected IOException with stream: r
+
+# Created at 2022-11-15T17:44:15.643
+Unexpected IOException with stream: o
+
+# Created at 2022-11-15T17:44:15.644
+Unexpected IOException with stream: m
+
+# Created at 2022-11-15T17:44:15.645
+Unexpected IOException with stream:  
+
+# Created at 2022-11-15T17:44:15.645
+Unexpected IOException with stream: r
+
+# Created at 2022-11-15T17:44:15.646
+Unexpected IOException with stream: e
+
+# Created at 2022-11-15T17:44:15.646
+Unexpected IOException with stream: n
+
+# Created at 2022-11-15T17:44:15.647
+Unexpected IOException with stream: d
+
+# Created at 2022-11-15T17:44:15.648
+Unexpected IOException with stream: e
+
+# Created at 2022-11-15T17:44:15.649
+Unexpected IOException with stream: r
+
+# Created at 2022-11-15T17:44:15.649
+Unexpected IOException with stream: e
+
+# Created at 2022-11-15T17:44:15.650
+Unexpected IOException with stream: r
+
+# Created at 2022-11-15T17:44:15.652
+Unexpected IOException with stream: 
+
+# Created at 2022-11-15T17:44:15.653
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-15T17:44:23.661
+Unexpected IOException with stream: Nov 15, 2022 5:44:23 PM engine.DriverUtils getScreenshot
+INFO: Trying to get screenshot in thread [17]
+
+
+# Created at 2022-11-15T17:44:23.664
+Unexpected IOException with stream: Nov 15, 2022 5:44:23 PM engine.DriverUtils getScreenshot
+INFO: WebDriver is opened in thread [17], trying to get screenshot
+
+
+# Created at 2022-11-15T17:44:23.807
+Unexpected IOException with stream: Nov 15, 2022 5:44:23 PM engine.DriverUtils getScreenshot
+INFO: Successfully got screenshot in thread [17]
+
+
+# Created at 2022-11-15T17:44:23.812
+Unexpected IOException with stream: Nov 15, 2022 5:44:23 PM engine.DriverUtils getScreenshot
+INFO: Trying to get screenshot in thread [17]
+
+
+# Created at 2022-11-15T17:44:23.814
+Unexpected IOException with stream: Nov 15, 2022 5:44:23 PM engine.DriverUtils getScreenshot
+INFO: WebDriver is opened in thread [17], trying to get screenshot
+
+
+# Created at 2022-11-15T17:44:23.940
+Unexpected IOException with stream: Nov 15, 2022 5:44:23 PM engine.DriverUtils getScreenshot
+INFO: Successfully got screenshot in thread [17]
+
+
+# Created at 2022-11-15T17:44:23.969
+Unexpected IOException with stream: Nov 15, 2022 5:44:23 PM utilities.TestListener onTestFailure
+WARNING: [0;31m**************** Test Failed -> verifySignupPage, in thread ->  17 ****************[0m
+
+
+# Created at 2022-11-15T17:44:23.970
+Unexpected IOException with stream: Nov 15, 2022 5:44:23 PM engine.DriverUtils getScreenshot
+INFO: Trying to get screenshot in thread [17]
+
+
+# Created at 2022-11-15T17:44:23.972
+Unexpected IOException with stream: Nov 15, 2022 5:44:23 PM engine.DriverUtils getScreenshot
+INFO: WebDriver is opened in thread [17], trying to get screenshot
+
+
+# Created at 2022-11-15T17:44:24.167
+Unexpected IOException with stream: Nov 15, 2022 5:44:24 PM utilities.TestListener onTestFailure
+WARNING: [0;31m**************** Test Failed -> verifyHomePage, in thread ->  16 ****************[0m
+
+
+# Created at 2022-11-15T17:44:24.169
+Unexpected IOException with stream: Nov 15, 2022 5:44:24 PM engine.DriverUtils getScreenshot
+INFO: Trying to get screenshot in thread [16]
+
+
+# Created at 2022-11-15T17:44:24.181
+Unexpected IOException with stream: Nov 15, 2022 5:44:24 PM engine.DriverUtils getScreenshot
+INFO: WebDriver is opened in thread [16], trying to get screenshot
+
+
+# Created at 2022-11-15T17:44:24.189
+Unexpected IOException with stream: Nov 15, 2022 5:44:24 PM engine.DriverUtils getScreenshot
+INFO: Successfully got screenshot in thread [17]
+
+
+# Created at 2022-11-15T17:44:24.190
+Unexpected IOException with stream: Nov 15, 2022 5:44:24 PM engine.DriverUtils getScreenshot
+INFO: Trying to get screenshot in thread [17]
+
+
+# Created at 2022-11-15T17:44:24.192
+Unexpected IOException with stream: Nov 15, 2022 5:44:24 PM engine.DriverUtils getScreenshot
+INFO: WebDriver is opened in thread [17], trying to get screenshot
+
+
+# Created at 2022-11-15T17:44:24.320
+Unexpected IOException with stream: Nov 15, 2022 5:44:24 PM engine.DriverUtils getScreenshot
+INFO: Successfully got screenshot in thread [17]
+
+
+# Created at 2022-11-15T17:44:24.325
+Unexpected IOException with stream: Nov 15, 2022 5:44:24 PM engine.DriverUtils getScreenshotFile
+INFO: Trying to get screenshot in thread [17]
+
+
+# Created at 2022-11-15T17:44:24.326
+Unexpected IOException with stream: Nov 15, 2022 5:44:24 PM engine.DriverUtils getScreenshotFile
+INFO: WebDriver is opened in thread [17], trying to get screenshot
+
+
+# Created at 2022-11-15T17:44:24.482
+Unexpected IOException with stream: Nov 15, 2022 5:44:24 PM engine.DriverUtils getScreenshotFile
+INFO: Successfully got screenshot in thread [17]
+
+
+# Created at 2022-11-15T17:44:24.484
+Unexpected IOException with stream: I am in onTestFailure method verifySignupPage failed
+
+
+# Created at 2022-11-15T17:44:24.485
+Unexpected IOException with stream: Screenshot captured for test case:verifySignupPage
+
+
+# Created at 2022-11-15T17:44:24.714
+Unexpected IOException: 8,1,test.HomePage.AfdalSignupPageValidation,verifySignupPage(test.HomePage.AfdalSignupPageValidation),null,Element not found {By.xpath: //p[contains(text()\002C"\0627\0646 \0643\0646\062A \0628\0627\0644\0641\0639\0644 \0645\0633\062A\062E\062F\0645\061F ")]}\000AExpected: text '\0627\0646 \0643\0646\062A \0628\0627\0644\0641\0639\0644 \0645\0633\062A\062E\062F\0645\061F '\000ATimeout: 10 s.\000ACaused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath"\002C"selector":"//p[contains(text()\002C"\0627\0646 \0643\0646\062A \0628\0627\0644\0641\0639\0644 \0645\0633\062A\062E\062F\0645\061F ")]"},null,Element not found {By.xpath: //p[contains(text()\002C"\0627\0646 \0643\0646\062A \0628\0627\0644\0641\0639\0644 \0645\0633\062A\062E\062F\0645\061F ")]}\000AExpected: text '\0627\0646 \0643\0646\062A \0628\0627\0644\0641\0639\0644 \0645\0633\062A\062E\062F\0645\061F '\000ATimeout: 10 s.\000ACaused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath"\002C"selector":"//p[contains(text()\002C"\0627\0646 \0643\0646\062A \0628\0627\0644\0641\0639\0644 \0645\0633\062A\062E\062F\0645\061F ")]"},AfdalSignupPageValidation.verifySignupPage:15->AfdalAnalyticsBaseTest.trigger:27 Element not found {By.xpath: //p[contains(text()\002C"\0627\0646 \0643\0646\062A \0628\0627\0644\0641\0639\0644 \0645\0633\062A\062E\062F\0645\061F ")]}\000AExpected: text '\0627\0646 \0643\0646\062A \0628\0627\0644\0641\0639\0644 \0645\0633\062A\062E\062F\0645\061F '\000ATimeout: 10 s.\000ACaused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath"\002C"selector":"//p[contains(text()\002C"\0627\0646 \0643\0646\062A \0628\0627\0644\0641\0639\0644 \0645\0633\062A\062E\062F\0645\061F ")]"},com.codeborne.selenide.ex.ElementNotFound: \000AElement not found {By.xpath: //p[contains(text()\002C"\0627\0646 \0643\0646\062A \0628\0627\0644\0641\0639\0644 \0645\0633\062A\062E\062F\0645\061F ")]}\000AExpected: text '\0627\0646 \0643\0646\062A \0628\0627\0644\0641\0639\0644 \0645\0633\062A\062E\062F\0645\061F '\000ATimeout: 10 s.\000ACaused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath"\002C"selector":"//p[contains(text()\002C"\0627\0646 \0643\0646\062A \0628\0627\0644\0641\0639\0644 \0645\0633\062A\062E\062F\0645\061F ")]"}\000A\0009at test.HomePage.AfdalSignupPageValidation.verifySignupPage(AfdalSignupPageValidation.java:15)\000ACaused by: org.openqa.selenium.NoSuchElementException: \000Ano such element: Unable to locate element: {"method":"xpath"\002C"selector":"//p[contains(text()\002C"\0627\0646 \0643\0646\062A \0628\0627\0644\0641\0639\0644 \0645\0633\062A\062E\062F\0645\061F ")]"}\000A  (Session info: chrome=107.0.5304.107)\000AFor documentation on this error\002C please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'VPLVM1'\002C ip: '10.1.0.8'\002C os.name: 'Windows Server 2016'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.2'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: true\002C browserName: chrome\002C browserVersion: 107.0.5304.107\002C chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576...\002C userDataDir: C:\005CUsers\005Cteam2\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:59057}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: WINDOWS\002C platformName: WINDOWS\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: accept\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 93fc537b4137e5e1d7dee99f6939289a\000A*** Element info: {Using=xpath\002C value=//p[contains(text()\002C"\0627\0646 \0643\0646\062A \0628\0627\0644\0641\0639\0644 \0645\0633\062A\062E\062F\0645\061F ")]}\000A\0009at test.HomePage.AfdalSignupPageValidation.verifySignupPage(AfdalSignupPageValidation.java:15)\000A
+
+
+# Created at 2022-11-15T17:44:24.942
+Unexpected IOException with stream: log4j:WARN No appenders could be found for logger (freemarker.cache).
+
+
+# Created at 2022-11-15T17:44:24.945
+Unexpected IOException with stream: log4j:WARN Please initialize the log4j system properly.
+
+
+# Created at 2022-11-15T17:44:24.946
+Unexpected IOException with stream: log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+
+
+# Created at 2022-11-15T17:44:25.571
+Unexpected IOException with stream: Nov 15, 2022 5:44:25 PM com.aventstack.extentreports.utils.Writer write
+SEVERE: C:\Users\team2\IdeaProjects\Afdal_analytics_Framework\WEB_UI_Module\Artifacts\NCSA_Automation_2022-11-15 at 17:43:56 UTC.html
+java.io.FileNotFoundException: C:\Users\team2\IdeaProjects\Afdal_analytics_Framework\WEB_UI_Module\Artifacts\NCSA_Automation_2022-11-15 at 17:43:56 UTC.html (The filename, directory name, or volume label syntax is incorrect)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at java.base/java.io.FileWriter.<init>(FileWriter.java:96)
+	at com.aventstack.extentreports.utils.Writer.write(Writer.java:22)
+	at com.aventstack.extentreports.reporter.BasicFileReporter.processTemplate(BasicFileReporter.java:296)
+	at com.aventstack.extentreports.reporter.ExtentHtmlReporter.flush(ExtentHtmlReporter.java:56)
+	at com.aventstack.extentreports.ExtentObservable.lambda$27(ExtentObservable.java:547)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at com.aventstack.extentreports.ExtentObservable.notifyReporters(ExtentObservable.java:547)
+	at com.aventstack.extentreports.ExtentObservable.flush(ExtentObservable.java:437)
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:274)
+	at Reporting.ExtentTestManager.endTest(ExtentTestManager.java:29)
+	at BaseClasses.BaseWebTest.tearDown(BaseWebTest.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+
+# Created at 2022-11-15T17:44:25.599
+Unexpected IOException with stream: Nov 15, 2022 5:44:25 PM BaseClasses.BaseWebTest tearDown
+INFO: Session is -> 93fc537b4137e5e1d7dee99f6939289a
+
+
+# Created at 2022-11-15T17:44:25.604
+Unexpected IOException with stream: 2022-11-15T17:44:25.604601500
+
+# Created at 2022-11-15T17:44:25.605
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-15T17:44:25.606
+Unexpected IOException with stream: Nov 15, 2022 5:44:25 PM engine.DriverUtils stop
+INFO: Trying to get screenshot before closing WebDriver [17]
+
+
+# Created at 2022-11-15T17:44:25.612
+Unexpected IOException with stream: Nov 15, 2022 5:44:25 PM engine.DriverUtils stop
+INFO: Get count for threads16
+
+
+# Created at 2022-11-15T17:44:25.613
+Unexpected IOException with stream: Nov 15, 2022 5:44:25 PM engine.DriverUtils stop
+INFO: Trying to close WebDriver in thread [17]
+
+
+# Created at 2022-11-15T17:44:29.747
+Unexpected IOException with stream: Nov 15, 2022 5:44:29 PM engine.DriverUtils stop
+INFO: Closed WebDriver in thread [17]
+
+
+# Created at 2022-11-15T17:44:29.752
+Unexpected IOException with stream: Nov 15, 2022 5:44:29 PM engine.DriverUtils stop
+INFO: WebDriver successfully closed
+
+
+# Created at 2022-11-15T17:44:32.211
+Unexpected IOException with stream: Exception in thread "TestNG-test=Afdal Analytics Login Page Ui Validation-1" 
+
+# Created at 2022-11-15T17:44:32.212
+Unexpected IOException with stream: After test
+
+
+# Created at 2022-11-15T17:44:32.216
+Unexpected IOException with stream: org.openqa.selenium.WebDriverException: disconnected: unable to connect to renderer
+  (failed to check if window was closed: disconnected: unable to connect to renderer)
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VPLVM1', ip: '10.1.0.8', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\team2\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59059}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7f380d476078029ca577405e19df10b7
+
+# Created at 2022-11-15T17:44:32.218
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-15T17:44:32.218
+Unexpected IOException with stream: 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+
+# Created at 2022-11-15T17:44:32.222
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-15T17:44:32.224
+Unexpected IOException with stream: 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+
+# Created at 2022-11-15T17:44:32.225
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-15T17:44:32.228
+Unexpected IOException with stream: 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+
+# Created at 2022-11-15T17:44:32.230
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-15T17:44:32.231
+Unexpected IOException with stream: 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+
+# Created at 2022-11-15T17:44:32.236
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-15T17:44:32.237
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+
+# Created at 2022-11-15T17:44:32.239
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-15T17:44:32.241
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+
+# Created at 2022-11-15T17:44:32.242
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-15T17:44:32.244
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+
+# Created at 2022-11-15T17:44:32.245
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-15T17:44:32.262
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+
+# Created at 2022-11-15T17:44:32.266
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-15T17:44:32.270
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+
+# Created at 2022-11-15T17:44:32.272
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-15T17:44:32.276
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+
+# Created at 2022-11-15T17:44:32.278
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-15T17:44:32.281
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+
+# Created at 2022-11-15T17:44:32.283
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-15T17:44:32.287
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+
+# Created at 2022-11-15T17:44:32.288
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-15T17:44:32.291
+Unexpected IOException with stream: 	at engine.DriverUtils.getScreenshot(DriverUtils.java:48)
+
+# Created at 2022-11-15T17:44:32.291
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-15T17:44:32.295
+Unexpected IOException with stream: 	at utilities.TestListener.onTestFailure(TestListener.java:51)
+
+# Created at 2022-11-15T17:44:32.296
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-15T17:44:32.301
+Unexpected IOException with stream: 	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:67)
+
+# Created at 2022-11-15T17:44:32.302
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-15T17:44:32.306
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+
+# Created at 2022-11-15T17:44:32.307
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-15T17:44:32.309
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1042)
+
+# Created at 2022-11-15T17:44:32.310
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-15T17:44:32.313
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+
+# Created at 2022-11-15T17:44:32.314
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-15T17:44:32.325
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+
+# Created at 2022-11-15T17:44:32.329
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-15T17:44:32.329
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+
+# Created at 2022-11-15T17:44:32.333
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-15T17:44:32.335
+Unexpected IOException with stream: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+
+# Created at 2022-11-15T17:44:32.335
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-15T17:44:32.338
+Unexpected IOException with stream: 	at java.base/java.lang.Thread.run(Thread.java:834)
+
+# Created at 2022-11-15T17:44:32.341
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-15T17:44:32.544
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGXmlTestSuite,TestSuite,null,null,null
+
+
