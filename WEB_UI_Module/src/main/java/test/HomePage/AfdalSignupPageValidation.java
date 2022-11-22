@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class AfdalSignupPageValidation extends AfdalAnalyticsBaseTest {
 
     @Test(description = "Verify Signup Page")
-    public void verifySignupPage() {
+    public void verifySignupPage_Arabic() {
 
 
 

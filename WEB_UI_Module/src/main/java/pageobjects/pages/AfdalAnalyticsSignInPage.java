@@ -1,7 +1,6 @@
 package pageobjects.pages;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
 import org.testng.Assert;
@@ -12,153 +11,160 @@ import static com.codeborne.selenide.Selenide.*;
 public class AfdalAnalyticsSignInPage implements IAfdalAnalyticsSignInPage
 {
 
+    // Accept Cookies.................
+    SelenideElement getAcceptCookie_Button = $x("//button[contains(text(),'مُوَافق')]");
 
-//    SelenideElement ok_btn = $x(".//div[@class='main-block']//button[contains(text(),'مُوَافق')]");
-//    SelenideElement login_btn = $x("//nav//a[contains(text(),'تسجيل الدخول')]");
+    SelenideElement getDescription_Cookie = $x("//p[contains(text(), \"نحن نستخدم ملفات تعريف الارتباط على موقعنا لأغراض التعريف والتحليل. باستخدام هذا الموقع فإنك توافق ع\")]");
 
-
-    SelenideElement closeCookie = $x("//div[@id='cookie-close-btn']");
-    SelenideElement signIn = $x("//nav//a[contains(text(),\"تسجيل الدخول\")]");
-
-    SelenideElement signInHeader = $x("//h3[contains(text(), \"سجل الدخول\")]");
-
-    SelenideElement subscribeLink = $x("//a[@href=\"https://staging.afdalanalytics.com/signup\"]");
-
-    SelenideElement subscribeLinkText = $x("//a//u[contains(text(), \"قم بالإشتراك\")]");
-
-//    SelenideElement Subscribe_Link_Description = $x("//*[@id=\"form\"]/p/font/font[contains(text(),'\n" +
-//            "                إذا لم تكن مستخدمًا؟\n" +
-//            "            ')]");
-
-    SelenideElement email = $x("//input[@id='email']");
-
-    SelenideElement emailText = $x("//label[contains(text(),\"البريد الإلكتروني\")]");
-
-    SelenideElement password = $x("//input[@name=\"password\"]");
-
-    SelenideElement passwordText = $x("//label[@id=\"password\" and contains(text(), 'كلمة المرور')]");
-
-    SelenideElement passwordShowHide = $x("//i[@id='icon']");
-
-    SelenideElement checkboxButton = $x("//input[@id=\"exampleCheck1\"]");
-
-    SelenideElement checkboxDescription = $x("//label[contains(text(), 'احتفظ بتسجيل دخولي')]");
-
-    SelenideElement forgotYourPasswordLink = $x("//a[@href=\"https://staging.afdalanalytics.com/reset-password\"]");
-
-    SelenideElement forgotYourPasswordLinkText = $x("//u[contains(text(),'نسيت رقمك السري؟')]");
-
-    SelenideElement SignInButton = $x("//button[contains(text(),'سجل الدخول')]");
-
-    SelenideElement logout = $x("//nav[@id=\"sidebar\"]//a[@href='/logout']");
-
-    //    SelenideElement AlertText = $x("//strong[contains(text(),'حقل بريد إلكتروني مطلوب. حقل كلمة المرور مطلوب.')]");
-    SelenideElement alertText = $x("//strong[contains(text(),'حقل كلمة المرور مطلوب.')]");
-
-    //    SelenideElement AlertText2 = $x("//strong[contains(text(),'حقل كلمة المرور مطلوب.')]");
-
-    SelenideElement alertText4 = $x("//div[@class='alert alert-danger alert-block mb-0']//strong[starts-with(text(),\"عليك إدخال بريد إلكتروني صحيح\")]");
-    //    SelenideElement AlertText3 = $x("//strong[contains(text(),'عليك إدخال بريد إلكتروني صحيح')]");
-    SelenideElement alertCloseButton = $x("//button[@class=\"close\"]");
-
-    SelenideElement orSigninWith = $x("//span[contains(text(),'أو قم بتسجيل الدخول باستخدام')]");
-
-    SelenideElement googleIcon = $x("//a[@id=\"googleAuth\"]");
-
-    SelenideElement linkedInIcon = $x("//a[@id='linkedIn']");
-
-    SelenideElement appleIcon = $x("//a[@id='apple']");
+    SelenideElement getCloseCookie_CrossSign = $x("//div[@id='cookie-close-btn']");
 
 
+//    SelenideElement getSignin_Button = $x("//nav//a[contains(text(),\"تسجيل الدخول\")]");
 
+    SelenideElement getSignin_Button = $x("//a[@role='button'][contains(text(),'تسجيل الدخول')]");
 
+    SelenideElement getHeader_Signin = $x("//h3[contains(text(), \"سجل الدخول\")]");
 
+    SelenideElement getHeader_SubscribeLink = $x("//a[@href=\"https://staging.afdalanalytics.com/signup\"]");
 
-//
-//    @Override
-//    public IAfdalAnalyticsSignInPage clickOnSignInButton()
-//    {
-//        ok_btn.waitUntil(Condition.visible,4000).click();
-//        login_btn.waitUntil(Condition.visible,4000).click();
-//        return AfdalPageFactory.getHomepage();
-//    }
+    SelenideElement getHeader_SubscribeLinkDescription = $x("//a//u[contains(text(), \"قم بالإشتراك\")]");
+
+    SelenideElement getEmailInput = $x("//input[@id='email']");
+
+    SelenideElement getSubHeader_Email = $x("//label[contains(text(),\"البريد الإلكتروني\")]");
+
+    SelenideElement getPasswordInput = $x("//input[@name=\"password\"]");
+
+    SelenideElement getSubHeader_Password = $x("//label[@id=\"password\" and contains(text(), 'كلمة المرور')]");
+
+    SelenideElement getShowIcon_Password = $x("//i[@id='icon']");
+
+    SelenideElement getCheckBoxbutton = $x("//input[@id=\"exampleCheck1\"]");
+
+    SelenideElement getSubDescription_CheckBox = $x("//label[contains(text(), 'احتفظ بتسجيل دخولي')]");
+
+    SelenideElement getLink_ForgotYourPassword = $x("//a[@href=\"https://staging.afdalanalytics.com/reset-password\"]");
+
+    SelenideElement getLinkDescription_ForgotYourPassword = $x("//u[contains(text(),'نسيت رقمك السري؟')]");
+
+    SelenideElement getSubmit_SignInButton = $x("//button[contains(text(),'سجل الدخول')]");
+
+    SelenideElement getAlert_EmailPasswordRequired = $x("//div[@class='alert alert-danger alert-block mb-0']//strong[contains(text(),'حقل بريد إلكتروني مطلوب. حقل كلمة المرور مطلوب.')]");
+
+    SelenideElement getAlert_EmailRequired = $x("//div[@class='alert alert-danger alert-block mb-0']//strong[contains(text(),'حقل بريد إلكتروني مطلوب.')]");
+    SelenideElement getAlert_InvalidEmail = $x("//div[@class='alert alert-danger alert-block mb-0']//strong[contains(text(),'عليك إدخال بريد إلكتروني صحيح')]");
+
+    SelenideElement getAlert_InvalidLoginAndWrongPassword = $x("//div[@class='alert alert-danger alert-block mb-0']//strong[contains(text(),'معلومات الدخول خاطئة او كلمة المرور خاطئة')]");
+    SelenideElement AlertCloseButton = $x("//button[@class=\"close\"]");
+
+    SelenideElement getSubHeader_OrSignUpWithIn = $x("//span[contains(text(),'أو قم بتسجيل الدخول باستخدام')]");
+
+    SelenideElement getIcon_Google = $x("//a[@id=\"googleAuth\"]");
+
+    SelenideElement getIcon_LinkedIn = $x("//a[@id='linkedIn']");
+
+    SelenideElement getIcon_Apple = $x("//a[@id='apple']");
+
+    SelenideElement getLogout_AfdalAnalytics = $x("//div[@class='side-bar-icon']");
 
 
     @Override
     public IAfdalAnalyticsSignInPage verify_SignIn_UI() {
-        refresh();
-        closeCookie.click();
-        signIn.waitUntil(Condition.visible,4000).click();
-        closeCookie.click();
 
-        signInHeader.shouldHave(Condition.exactText("سجل الدخول"));
+        // Assertion on PopUp-Cookie...........
 
-//    Subscribe_Link_Description.shouldHave(Condition.exactText("\n" +
-//////                "                إذا لم تكن مستخدمًا؟\n" +
-//                "            "));
 
-        subscribeLink.shouldHave(Condition.visible);
+//        getDescription_Cookie.shouldHave(Condition.exactText("نحن نستخدم ملفات تعريف الارتباط على موقعنا لأغراض التعريف والتحليل. باستخدام هذا الموقع فإنك توافق ع"));
+        System.out.println(getCloseCookie_CrossSign.isDisplayed());
+        System.out.println(getAcceptCookie_Button.isDisplayed());
+        getAcceptCookie_Button.shouldHave(Condition.exactText("مُوَافق")).click();
 
-        subscribeLinkText.shouldHave(Condition.exactText("قم بالإشتراك"));
 
-        emailText.shouldHave(Condition.exactText("البريد الإلكتروني"));
+//        Assertion on SignIn Button.........
+        System.out.println(getSignin_Button.isDisplayed());
+        getSignin_Button.shouldHave(Condition.exactText("تسجيل الدخول"));
+        getSignin_Button.waitUntil(Condition.visible,4000).click();
 
-        passwordText.waitUntil(Condition.visible,1000).shouldHave(Condition.exactText("كلمة المرور"));
+//  Assertion on Sign In Subscribe Description and Link............
+        getHeader_Signin.shouldHave(Condition.exactText("سجل الدخول"));
+        getHeader_SubscribeLinkDescription.shouldHave(Condition.exactText("قم بالإشتراك"));
+        getHeader_SubscribeLink.shouldHave(Condition.visible).click();
+        back();
 
-        passwordShowHide.shouldBe(Condition.visible);
 
-        checkboxButton.click();
-        checkboxButton.shouldBe(Condition.visible,Condition.checked);
-        checkboxDescription.shouldHave(Condition.exactText("احتفظ بتسجيل دخولي"));
 
-        forgotYourPasswordLinkText.shouldHave(Condition.exactText("نسيت رقمك السري؟"));
-        forgotYourPasswordLink.shouldBe(Condition.visible);
+// Assertion on Email Section.......
 
-        orSigninWith.shouldHave(Condition.exactText("أو قم بتسجيل الدخول باستخدام"));
+        getSubHeader_Email.shouldHave(Condition.exactText("البريد الإلكتروني"));
+        System.out.println(getSubHeader_Email);
+        getEmailInput.isDisplayed();
+        getEmailInput.setValue("demo@afdal.com");
+        getEmailInput.clear();
 
-        googleIcon.shouldBe(Condition.visible);
+        //Assertion on Password Section.................
 
-        linkedInIcon.shouldBe(Condition.visible);
+        getSubHeader_Password.waitUntil(Condition.visible,1000).shouldHave(Condition.exactText("كلمة المرور"));
 
-        appleIcon.shouldBe(Condition.visible);
+        getPasswordInput.isDisplayed();
+        getPasswordInput.setValue("demo2022");
+        getPasswordInput.clear();
 
-        SignInButton.shouldHave(Condition.exactText("سجل الدخول"));
+//        PasswordShowHide.shouldBe(Condition.visible);
+
+
+
+//        Assertion on Checkbox Button..........
+        getCheckBoxbutton.click();
+        getCheckBoxbutton.shouldBe(Condition.visible,Condition.checked);
+        getSubDescription_CheckBox.shouldHave(Condition.exactText("احتفظ بتسجيل دخولي"));
+
+        // Assertion on Forgot your password link............
+        getLinkDescription_ForgotYourPassword.shouldHave(Condition.exactText("نسيت رقمك السري؟"));
+        getLink_ForgotYourPassword.shouldBe(Condition.visible);
+
+//      Assertion on Or SignUp withIn Section...................\
+        getSubHeader_OrSignUpWithIn.shouldHave(Condition.exactText("أو قم بتسجيل الدخول باستخدام"));
+
+        getIcon_Google.shouldBe(Condition.visible);
+
+        getIcon_LinkedIn.shouldBe(Condition.visible);
+
+        getIcon_Apple.shouldBe(Condition.visible);
+
+        getSubmit_SignInButton.shouldHave(Condition.exactText("سجل الدخول"));
 
         return AfdalPageFactory.getHomepage();
+
 
     }
 
 
 
+
+
+
+    //    Sign in with all filed are empty_N..........
     @Override
     public  IAfdalAnalyticsSignInPage verify_Signin_with_all_filed_are_empty_N(){
         refresh();
-        closeCookie.click();
-        signIn.waitUntil(Condition.visible,3000).click();
-        closeCookie.click();
-        SignInButton.shouldBe(Condition.visible).click();
-        closeCookie.click();
-        alertText.shouldHave(Condition.exactText("حقل بريد إلكتروني مطلوب. حقل كلمة المرور مطلوب."));
-        alertCloseButton.click();
+//        getSignin_Button.waitUntil(Condition.visible,3000).click();
+        getSubmit_SignInButton.shouldBe(Condition.visible).click();
+        getAlert_EmailPasswordRequired.shouldHave(Condition.exactText("حقل بريد إلكتروني مطلوب. حقل كلمة المرور مطلوب."));
+        AlertCloseButton.click();
         return AfdalPageFactory.getHomepage();
     }
 
 
 
-
     @Override
-    public  IAfdalAnalyticsSignInPage Email_password_field() {
+    public  IAfdalAnalyticsSignInPage Email_password_field(){
         refresh();
-        closeCookie.click();
-        signIn.waitUntil(Condition.visible, 3000).click();
-        closeCookie.click();
-        email.sendKeys("Demo@afdal.com");
-        password.sendKeys("demo2022");
-        checkboxButton.click();
-        SignInButton.click();
-        System.out.println(WebDriverRunner.getWebDriver().getCurrentUrl());
-        System.out.println(WebDriverRunner.getWebDriver().getTitle());
-        Selenide.executeJavaScript("arguments[0].click();", logout);
+        getSignin_Button.waitUntil(Condition.visible,3000).click();
+        getEmailInput.sendKeys("Demo@afdal.com");
+        getPasswordInput.sendKeys("demo2022");
+        getCheckBoxbutton.click();
+        getSubmit_SignInButton.hover().click();
+        getLogout_AfdalAnalytics.click();
         return AfdalPageFactory.getHomepage();
 
 
@@ -169,120 +175,103 @@ public class AfdalAnalyticsSignInPage implements IAfdalAnalyticsSignInPage
     @Override
     public IAfdalAnalyticsSignInPage Email_empty_password_field_N() {
         refresh();
-        closeCookie.click();
-        signIn.waitUntil(Condition.visible,3000).click();
-        closeCookie.click();
-        email.sendKeys("Demo@afdal.com");
-        checkboxButton.click();
-        SignInButton.click();
-        closeCookie.click();
-        alertText.should(Condition.exactText("حقل كلمة المرور مطلوب."));
-        alertCloseButton.click();
+        getSignin_Button.click();
+        getEmailInput.sendKeys("Demo@afdal.com");
+        getCheckBoxbutton.click();
+        getSubmit_SignInButton.isEnabled();
         return AfdalPageFactory.getHomepage();
 
     }
-
-
-
 
 
     @Override
     public IAfdalAnalyticsSignInPage Empty_Email_Fill_password_field_N() {
-        refresh();
-        closeCookie.click();
-        signIn.waitUntil(Condition.visible,3000).click();
-        closeCookie.click();
-        password.sendKeys("demo2022");
-        checkboxButton.click();
-        SignInButton.click();
-        closeCookie.click();
-//        AlertText2.shouldHave(Condition.text("حقل كلمة المرور مطلوب."));
-        alertCloseButton.click();
+        getSignin_Button.waitUntil(Condition.visible,3000).click();
+        getPasswordInput.setValue("demo2022");
+        getCheckBoxbutton.click();
+        getSubmit_SignInButton.click();
+        getAlert_EmailRequired.shouldHave(Condition.exactText("حقل بريد إلكتروني مطلوب."));
+        AlertCloseButton.click();
         return AfdalPageFactory.getHomepage();
     }
 
 
-
-
-
-
     @Override
-    public IAfdalAnalyticsSignInPage Email_validation_N() throws InterruptedException {
-        refresh();
-        closeCookie.click();
-        signIn.waitUntil(Condition.visible, 3000).click();
-        refresh();
-        closeCookie.click();
-        email.setValue("demoatafdal.com");
-        password.setValue("demo2022");
-        checkboxButton.click();
-        SignInButton.click();
-        closeCookie.click();
-        alertText4.shouldBe(Condition.text("عليك إدخال بريد إلكتروني صحيح"));
-        alertCloseButton.click();
+    public IAfdalAnalyticsSignInPage Email_validation_N() {
 
-        Thread.sleep(10000);
+        getSignin_Button.waitUntil(Condition.visible,3000).click();
         refresh();
-        closeCookie.click();
-        email.setValue("demo@afdal");
-        password.setValue("demo2022");
-        checkboxButton.click();
-        SignInButton.click();
-        closeCookie.click();
-//        alertText4.shouldBe(Condition.text("عليك إدخال بريد إلكتروني صحيح"));
-//        String alert4 = alertText4.getSelectedText();
-//        Assert.assertEquals(alert4, "عليك إدخال بريد إلكتروني صحيح");
-        alertCloseButton.click();
+        getEmailInput.setValue("testatgmail.com");
+//        String email_error1 = String.valueOf(getEmailInput.setValue("testatgmail.com"));
+//        Assert.assertEquals(email_error1,"test@gmail.com");
+        getPasswordInput.sendKeys("demo2022");
+        getCheckBoxbutton.click();
+        getSubmit_SignInButton.click();
+        getAlert_InvalidEmail.shouldHave(Condition.exactText("عليك إدخال بريد إلكتروني صحيح"));
 
-        Thread.sleep(3000);
         refresh();
-        closeCookie.click();
-        email.setValue("@gmail");
-        password.sendKeys("demo2022");
-        checkboxButton.click();
-        SignInButton.click();
-        closeCookie.click();
-//        alertText4.shouldBe(Condition.text("عليك إدخال بريد إلكتروني صحيح"));
-        alertCloseButton.click();
+
+        getEmailInput.setValue("test@gmail");
+//        String email_error2 = String.valueOf(getEmailInput.setValue("test@gmail"));
+//        Assert.assertEquals(email_error2,"test@gmail.com");
+        getPasswordInput.sendKeys("demo2022");
+        getCheckBoxbutton.click();
+        getSubmit_SignInButton.click();
+        getAlert_InvalidLoginAndWrongPassword.shouldHave(Condition.text("معلومات الدخول خاطئة او كلمة المرور خاطئة"));
 
 
-        Thread.sleep(3000);
         refresh();
-        closeCookie.click();
-        password.setValue("demo@afdalcom");
-        password.sendKeys("demo2022");
-        checkboxButton.click();
-        SignInButton.click();
-        closeCookie.click();
-//        alertText4.shouldBe(Condition.text("عليك إدخال بريد إلكتروني صحيح"));
-        alertCloseButton.click();
+
+
+        getEmailInput.setValue("test@gmailcom");
+//        String email_error3 = String.valueOf(getEmailInput.setValue("test@gmailcom"));
+//        Assert.assertEquals(email_error3,"test@gmail.com");
+        getPasswordInput.sendKeys("demo2022");
+        getCheckBoxbutton.click();
+        getSubmit_SignInButton.click();
+        getAlert_InvalidLoginAndWrongPassword.shouldHave(Condition.text("معلومات الدخول خاطئة او كلمة المرور خاطئة"));
+
+
+
+        refresh();
+
+        getEmailInput.setValue("test@gmailcom");
+//        String email_error4 = String.valueOf(getEmailInput.setValue("@gmail"));
+//        Assert.assertEquals(email_error4,"test@gmail.com");
+        getPasswordInput.sendKeys("demo2022");
+        getCheckBoxbutton.click();
+        getSubmit_SignInButton.click();
+        getAlert_InvalidLoginAndWrongPassword.shouldHave(Condition.text("معلومات الدخول خاطئة او كلمة المرور خاطئة"));
+
 
 
         return AfdalPageFactory.getHomepage();
     }
 
 
-
-
-
     @Override
-    public IAfdalAnalyticsSignInPage Password_validation_N(){
+    public IAfdalAnalyticsSignInPage Password_validation_N() {
+
+        getSignin_Button.waitUntil(Condition.visible,3000).click();
+        getEmailInput.setValue("Demo@afdal.com");
+//        String passord_error1 = String.valueOf(Password.setValue("12345"));
+//        Assert.assertEquals(passord_error1,"123456");
+        getPasswordInput.setValue("12345");
+        getCheckBoxbutton.click();
+        getSubmit_SignInButton.click();
+        Boolean buttonEnabled = getSubmit_SignInButton.isEnabled();
+        Assert.assertFalse(buttonEnabled);
+
 
         refresh();
-        closeCookie.click();
-        signIn.waitUntil(Condition.visible, 3000).click();
-        refresh();
-        closeCookie.click();
-        email.setValue("demo@afdal.com");
-        password.setValue("demo1");
-        SignInButton.shouldBe(Condition.disabled);
 
-
-        refresh();
-        closeCookie.click();
-        email.setValue("demo@afdal.com");
-        password.setValue("demo2022");
-        SignInButton.shouldBe(Condition.enabled);
+        getEmailInput.sendKeys("Demo@afdal.com");
+//        String passord_error2 = String.valueOf(Password.setValue("123456"));
+//        Assert.assertEquals(passord_error2,"123456");
+        getPasswordInput.setValue("demo2022");
+        getCheckBoxbutton.click();
+        getSubmit_SignInButton.click();
+        getLogout_AfdalAnalytics.click();
 
 
         return AfdalPageFactory.getHomepage();
@@ -290,52 +279,16 @@ public class AfdalAnalyticsSignInPage implements IAfdalAnalyticsSignInPage
     }
 
 
-
     @Override
-    public IAfdalAnalyticsSignInPage ClickOn_SignUp() {
+    public IAfdalAnalyticsSignInPage Signin_with_apple_N() {
 
-        refresh();
-        closeCookie.click();
-        signIn.waitUntil(Condition.visible, 3000).click();
-        closeCookie.click();
-        subscribeLink.click();
-        System.out.println(WebDriverRunner.getWebDriver().getCurrentUrl());
-        System.out.println(WebDriverRunner.getWebDriver().getTitle());
-        return AfdalPageFactory.getHomepage();
-
-    }
-
-    @Override
-    public IAfdalAnalyticsSignInPage Signin_with_apple_N() throws InterruptedException {
-        refresh();
-        closeCookie.click();
-        signIn.waitUntil(Condition.visible, 3000).click();
-        closeCookie.click();
-        Thread.sleep(4000);
-        appleIcon.click();
+        getSignin_Button.waitUntil(Condition.visible, 3000).click();
+        getIcon_Apple.click();
         switchTo().window(1);
-        System.out.println(WebDriverRunner.getWebDriver().getCurrentUrl());
-        System.out.println(WebDriverRunner.getWebDriver().getTitle());
-        closeWindow();
-        switchTo().window(0);
-        return AfdalPageFactory.getHomepage();
-    }
-
-
-
-
-
-    @Override
-    public IAfdalAnalyticsSignInPage Signin_with_google_N() throws InterruptedException {
-        refresh();
-        closeCookie.click();
-        signIn.waitUntil(Condition.visible, 3000).click();
-        closeCookie.click();
-        Thread.sleep(2000);
-        googleIcon.click();
-        switchTo().window(1);
-        System.out.println(WebDriverRunner.getWebDriver().getCurrentUrl());
-        System.out.println(WebDriverRunner.getWebDriver().getTitle());
+        boolean appleURL = WebDriverRunner.getWebDriver().getCurrentUrl().startsWith("https://appleid.apple.com/");
+        Assert.assertTrue(appleURL);
+        String appleTitle = WebDriverRunner.getWebDriver().getTitle();
+        Assert.assertEquals(appleTitle,"403 Forbidden");
         closeWindow();
         switchTo().window(0);
         return AfdalPageFactory.getHomepage();
@@ -344,21 +297,33 @@ public class AfdalAnalyticsSignInPage implements IAfdalAnalyticsSignInPage
 
 
     @Override
-    public IAfdalAnalyticsSignInPage Signin_with_linkedIn_N() throws InterruptedException {
-        refresh();
-        closeCookie.click();
-        signIn.waitUntil(Condition.visible, 3000).click();
-        closeCookie.click();
-        Thread.sleep(2000);
-        linkedInIcon.click();
+    public IAfdalAnalyticsSignInPage Signin_with_google_N() {
+        getSignin_Button.waitUntil(Condition.visible, 3000).click();
+        getIcon_Google.click();
         switchTo().window(1);
-        System.out.println(WebDriverRunner.getWebDriver().getCurrentUrl());
-        System.out.println(WebDriverRunner.getWebDriver().getTitle());
+        boolean googleURL = WebDriverRunner.getWebDriver().getCurrentUrl().startsWith("https://accounts.google.com/");
+        Assert.assertTrue(googleURL);
+        String googleTitle = WebDriverRunner.getWebDriver().getTitle();
+        Assert.assertEquals(googleTitle,"Sign in - Google Accounts");
         closeWindow();
         switchTo().window(0);
         return AfdalPageFactory.getHomepage();
     }
 
+    @Override
+    public IAfdalAnalyticsSignInPage Signin_with_linkedIn_N() {
+        refresh();
+        getSignin_Button.waitUntil(Condition.visible, 3000).click();
+        getIcon_LinkedIn.click();
+        switchTo().window(1);
+        boolean linkedinURL = WebDriverRunner.getWebDriver().getCurrentUrl().startsWith("https://www.linkedin.com/");
+        Assert.assertTrue(linkedinURL);
+        String linkedinTitle = WebDriverRunner.getWebDriver().getTitle();
+        Assert.assertEquals(linkedinTitle,"LinkedIn Login, Sign in | LinkedIn");
+        closeWindow();
+        switchTo().window(0);
+        return AfdalPageFactory.getHomepage();
+    }
 
 
 

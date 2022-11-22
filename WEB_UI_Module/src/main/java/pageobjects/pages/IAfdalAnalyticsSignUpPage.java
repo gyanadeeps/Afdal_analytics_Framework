@@ -17,6 +17,10 @@ package pageobjects.pages;public interface IAfdalAnalyticsSignUpPage {
 //    IAfdalAnalyticsSignUpPage SignUp_checking_Afdal_terms_with_checkbox() throws InterruptedException;
 
 
+    IAfdalAnalyticsSignUpPage SignUp_without_checking_Afdal_terms_checkbox_N();
+
+    IAfdalAnalyticsSignUpPage SignUp_checking_Afdal_terms_with_checkbox() throws InterruptedException;
+
     IAfdalAnalyticsSignUpPage Click_on_SignIn() throws InterruptedException;
 
     IAfdalAnalyticsSignUpPage SignUp_with_google_N() throws InterruptedException;

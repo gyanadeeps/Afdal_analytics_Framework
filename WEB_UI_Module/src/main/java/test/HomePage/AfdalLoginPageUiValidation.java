@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class AfdalLoginPageUiValidation extends AfdalAnalyticsBaseTest
 {
     @Test(description = "Verify Login Page")
-    public void verifyHomePage()
+    public void verifyLoginPage_Arabic()
     {
 
         add(new AfdalAnalyticsSignInImpl()).trigger();

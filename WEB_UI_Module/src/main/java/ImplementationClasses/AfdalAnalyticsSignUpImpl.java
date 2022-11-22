@@ -23,8 +23,9 @@ public class AfdalAnalyticsSignUpImpl extends AfdalAnalyticsSignupPage implement
 
         try {
 
-            homePage.Signup_Verify_UI();
+
             homePage.SignUp_with_all_filed_empty_N();
+            homePage.Signup_Verify_UI();
             homePage.SignUp_with_valid_data();
             homePage.SignUp_Enter_all_data_Except_Companyname_N();
             homePage.SignUp_Enter_all_data_Except_Position_N();
@@ -33,15 +34,15 @@ public class AfdalAnalyticsSignUpImpl extends AfdalAnalyticsSignupPage implement
             homePage.SignUp_Enter_all_data_Except_Lastname_N();
             homePage.Email_validation_N();
             homePage.Password_validation_N();
-            homePage.Click_on_SignIn();
+            homePage.SignUp_without_checking_Afdal_terms_checkbox_N();
+            homePage.SignUp_checking_Afdal_terms_with_checkbox();
             homePage.SignUp_with_google_N();
             homePage.SignUp_with_apple_N();
             homePage.SignUp_with_linkedIn_N();
-            homePage.verifyTwitterIcon();
+            homePage.verifyFacebookIcon();
             homePage.verifyInstagramIcon();
             homePage.verifyFacebookIcon();
-
-            homePage.verifyLinkedInIcon();
+            homePage.verifyTwitterIcon();
 
 
         } catch (Exception exception) {
