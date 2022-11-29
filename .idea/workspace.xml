@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="097997cd-fcb9-4e89-8743-443c9de2d38b" name="Changes" comment="verify Signin_Arabic and Signup_Arabic version 2">
+    <list default="true" id="097997cd-fcb9-4e89-8743-443c9de2d38b" name="Changes" comment="verify Signin_Arabic and Signup_Arabic version 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/Artifacts/TestNG_Custom_Report.html" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/Artifacts/TestNG_Custom_Report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/AfdalAnalyticsSignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/AfdalAnalyticsSignInPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/AfdalAnalyticsSignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/src/main/java/pageobjects/pages/AfdalAnalyticsSignUpPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/pages/AfdalAnalyticsSignInPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/pages/AfdalAnalyticsSignInPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/pages/AfdalAnalyticsSignUpPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB_UI_Module/target/classes/pageobjects/pages/AfdalAnalyticsSignUpPage.class" afterDir="false" />
@@ -98,7 +98,7 @@
       <command value="mvn clean test -Dbrowser=FF" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/WEB_UI_Module/src/main/resources/CHROME.xml">
+  <component name="RunManager" selected="TestNG.AfdalSignupPageValidation">
     <configuration name="AfdalLoginPageUiValidation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WEB_UI_Module" />
       <shortenClasspath name="NONE" />
@@ -264,9 +264,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/WEB_UI_Module/src/main/resources/CHROME.xml" />
-        <item itemvalue="TestNG.AfdalLoginPageUiValidation" />
         <item itemvalue="TestNG.AfdalSignupPageValidation" />
+        <item itemvalue="TestNG.AfdalLoginPageUiValidation" />
+        <item itemvalue="TestNG.C:/Users/team2/IdeaProjects/Web_API_Mobile_framework/WEB_UI_Module/src/main/resources/CHROME.xml" />
         <item itemvalue="TestNG.AfdalLoginPageUiValidation.verifyHomePage" />
         <item itemvalue="TestNG.NewLoanFromCustomerTab" />
       </list>
@@ -280,13 +280,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627924201276</updated>
-    </task>
-    <task id="LOCAL-00065" summary="Account Test Cases v5">
-      <created>1643911469181</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1643911469182</updated>
     </task>
     <task id="LOCAL-00066" summary="Account Test Cases v6">
       <created>1643912956287</created>
@@ -624,7 +617,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669740018076</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="verify Signin_Arabic and Signup_Arabic version 3">
+      <created>1669741237786</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1669741237786</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -642,7 +642,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/MyNavidGaid_automation" />
     </ignored-roots>
-    <MESSAGE value="Mobile Test cases v7" />
     <MESSAGE value="Mobile Test cases v8" />
     <MESSAGE value="Mobile Test cases v9" />
     <MESSAGE value="Mobile Test cases v10" />
@@ -667,7 +666,8 @@
     <MESSAGE value="headless configuration v1" />
     <MESSAGE value="verify Signin_Arabic and Signup_Arabic" />
     <MESSAGE value="verify Signin_Arabic and Signup_Arabic version 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="verify Signin_Arabic and Signup_Arabic version 2" />
+    <MESSAGE value="verify Signin_Arabic and Signup_Arabic version 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="verify Signin_Arabic and Signup_Arabic version 3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/README_md$NewLoanFromActivityCenter.ic" NAME="NewLoanFromActivityCenter Coverage Results" MODIFIED="1642441795656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

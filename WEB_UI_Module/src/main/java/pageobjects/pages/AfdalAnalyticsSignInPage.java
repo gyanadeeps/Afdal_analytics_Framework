@@ -303,9 +303,13 @@ public class AfdalAnalyticsSignInPage implements IAfdalAnalyticsSignInPage
         switchTo().window(1);
         boolean googleURL = WebDriverRunner.getWebDriver().getCurrentUrl().startsWith("https://accounts.google.com/");
         Assert.assertTrue(googleURL);
-        String googleTitle = String.valueOf(WebDriverRunner.getWebDriver().getTitle().contains("Google Accounts"));
+        String googleTitle = WebDriverRunner.getWebDriver().getTitle();
+        Boolean title = googleTitle.contains("Google Accounts");
+        Assert.assertTrue(title);
 //        Assert.assertEquals(googleTitle,"Sign in - Google Accounts");
-        Assert.assertTrue(Boolean.parseBoolean(googleTitle));
+        System.out.println(googleTitle);
+//        Assert.assertTrue(Boolean.parseBoolean(googleTitle), "Sign in - Google Accounts");
+//        Assert.assertEquals(googleTitle, "Sign in - Google Accounts");
         closeWindow();
         switchTo().window(0);
         return AfdalPageFactory.getHomepage();

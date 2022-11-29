@@ -540,10 +540,12 @@ public class AfdalAnalyticsSignUpPage implements IAfdalAnalyticsSignUpPage{
         switchTo().window(1);
         boolean googleURL = WebDriverRunner.getWebDriver().getCurrentUrl().startsWith("https://accounts.google.com/");
         Assert.assertTrue(googleURL);
-        String googleTitle = String.valueOf(WebDriverRunner.getWebDriver().getTitle().contains("Google Accounts"));
+        String googleTitle = WebDriverRunner.getWebDriver().getTitle();
+        Boolean title = googleTitle.contains("Google Accounts");
+        Assert.assertTrue(title);
 //        Assert.assertEquals(googleTitle,"Sign in - Google Accounts");
         System.out.println(googleTitle);
-        Assert.assertTrue(Boolean.parseBoolean(googleTitle));
+//        Assert.assertTrue(Boolean.parseBoolean(googleTitle),"Sign In - Google");
         closeWindow();
         switchTo().window(0);
         return AfdalAnalyticsSignUpPageFactory.getSignUpPage();
@@ -584,7 +586,11 @@ public class AfdalAnalyticsSignUpPage implements IAfdalAnalyticsSignUpPage{
         boolean twitterIcon = WebDriverRunner.getWebDriver().getCurrentUrl().startsWith("https://twitter.com/afdalanalytics");
         Assert.assertTrue(twitterIcon);
         String twitterTitle = WebDriverRunner.getWebDriver().getTitle();
-        Assert.assertEquals(twitterTitle,"Afdal Analytics - أفضل التحليلات (@AfdalAnalytics) / Twitter");
+        Boolean titleTwitter = twitterTitle.contains("Twitter");
+        System.out.println(twitterTitle);
+        Assert.assertTrue(titleTwitter);
+//        Assert.assertEquals(twitterTitle,"Profile / Twitter");
+//        Assert.assertEquals(twitterTitle,"Afdal Analytics - أفضل التحليلات (@AfdalAnalytics) / Twitter");
         switchTo().window(0);
         return  AfdalAnalyticsSignUpPageFactory.getSignUpPage();
     }
@@ -621,11 +627,12 @@ public class AfdalAnalyticsSignUpPage implements IAfdalAnalyticsSignUpPage{
         executeJavaScript("arguments[0].click();", getFacebookFooterIcon);
 
         switchTo().window(1);
-        boolean linkedinURL = WebDriverRunner.getWebDriver().getCurrentUrl().startsWith("https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FAfdal.Analytics");
-            Assert.assertTrue(linkedinURL);
-            String facebookTitle = String.valueOf(WebDriverRunner.getWebDriver().getTitle().contains("Facebook"));
+        boolean facebookUrl = WebDriverRunner.getWebDriver().getCurrentUrl().startsWith("https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FAfdal.Analytics");
+            Assert.assertTrue(facebookUrl);
+            String facebookTitle = WebDriverRunner.getWebDriver().getTitle();
 //            Assert.assertEquals(facebookTitle,"Facebook");
-        Assert.assertTrue(Boolean.parseBoolean(facebookTitle), "Facebook");
+//        System.out.println(facebookTitle);
+//        Assert.assertTrue(Boolean.parseBoolean(facebookTitle), "Facebook");
         closeWindow();
 
         switchTo().window(0);
