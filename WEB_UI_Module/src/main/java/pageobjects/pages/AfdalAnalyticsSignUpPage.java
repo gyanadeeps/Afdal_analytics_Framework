@@ -542,6 +542,7 @@ public class AfdalAnalyticsSignUpPage implements IAfdalAnalyticsSignUpPage{
         Assert.assertTrue(googleURL);
         String googleTitle = String.valueOf(WebDriverRunner.getWebDriver().getTitle().contains("Google Accounts"));
 //        Assert.assertEquals(googleTitle,"Sign in - Google Accounts");
+        System.out.println(googleTitle);
         Assert.assertTrue(Boolean.parseBoolean(googleTitle));
         closeWindow();
         switchTo().window(0);
@@ -622,9 +623,11 @@ public class AfdalAnalyticsSignUpPage implements IAfdalAnalyticsSignUpPage{
         switchTo().window(1);
         boolean linkedinURL = WebDriverRunner.getWebDriver().getCurrentUrl().startsWith("https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FAfdal.Analytics");
             Assert.assertTrue(linkedinURL);
-            String linkedinTitle = WebDriverRunner.getWebDriver().getTitle();
-            Assert.assertEquals(linkedinTitle,"Log into Facebook");
+            String facebookTitle = String.valueOf(WebDriverRunner.getWebDriver().getTitle().contains("Facebook"));
+//            Assert.assertEquals(facebookTitle,"Facebook");
+        Assert.assertTrue(Boolean.parseBoolean(facebookTitle), "Facebook");
         closeWindow();
+
         switchTo().window(0);
         return  AfdalAnalyticsSignUpPageFactory.getSignUpPage();
     }
