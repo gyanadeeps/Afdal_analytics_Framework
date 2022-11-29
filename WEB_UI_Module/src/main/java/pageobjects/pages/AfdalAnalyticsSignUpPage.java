@@ -538,8 +538,9 @@ public class AfdalAnalyticsSignUpPage implements IAfdalAnalyticsSignUpPage{
     public IAfdalAnalyticsSignUpPage SignUp_with_google_N() {
         getGoogleIcon.click();
         switchTo().window(1);
-        boolean googleURL = WebDriverRunner.getWebDriver().getCurrentUrl().startsWith("https://accounts.google.com/");
-        Assert.assertTrue(googleURL);
+        String googleURL = WebDriverRunner.getWebDriver().getCurrentUrl();
+        Boolean urlGoogle = googleURL.startsWith("https://accounts.google.com/");
+        Assert.assertTrue(urlGoogle);
         String googleTitle = WebDriverRunner.getWebDriver().getTitle();
         Boolean title = googleTitle.contains("Google Accounts");
         Assert.assertTrue(title);
@@ -555,8 +556,9 @@ public class AfdalAnalyticsSignUpPage implements IAfdalAnalyticsSignUpPage{
     public IAfdalAnalyticsSignUpPage SignUp_with_linkedIn_N() {
         getLinkedInIcon.click();
         switchTo().window(1);
-        boolean linkedinURL = WebDriverRunner.getWebDriver().getCurrentUrl().startsWith("https://www.linkedin.com/");
-        Assert.assertTrue(linkedinURL);
+        String linkedinURL = WebDriverRunner.getWebDriver().getCurrentUrl();
+        Boolean urlLinkedin = linkedinURL.startsWith("https://www.linkedin.com/");
+        Assert.assertTrue(urlLinkedin);
         String linkedinTitle = WebDriverRunner.getWebDriver().getTitle();
         Assert.assertEquals(linkedinTitle,"LinkedIn Login, Sign in | LinkedIn");
         closeWindow();
@@ -569,8 +571,9 @@ public class AfdalAnalyticsSignUpPage implements IAfdalAnalyticsSignUpPage{
     public IAfdalAnalyticsSignUpPage SignUp_with_apple_N() {
         getAppleIcon.click();
         switchTo().window(1);
-        boolean appleURL = WebDriverRunner.getWebDriver().getCurrentUrl().startsWith("https://appleid.apple.com/");
-        Assert.assertTrue(appleURL);
+        String appleURL = WebDriverRunner.getWebDriver().getCurrentUrl();
+        Boolean urlApple = appleURL.startsWith("https://appleid.apple.com/");
+        Assert.assertTrue(urlApple);
         String appleTitle = WebDriverRunner.getWebDriver().getTitle();
         Assert.assertEquals(appleTitle,"403 Forbidden");
         closeWindow();
@@ -583,14 +586,16 @@ public class AfdalAnalyticsSignUpPage implements IAfdalAnalyticsSignUpPage{
 //        getTwitterFooterIcon.click();
         executeJavaScript("arguments[0].click();", getTwitterFooterIcon);
         switchTo().window(1);
-        boolean twitterIcon = WebDriverRunner.getWebDriver().getCurrentUrl().startsWith("https://twitter.com/afdalanalytics");
-        Assert.assertTrue(twitterIcon);
+        String twitterIcon = WebDriverRunner.getWebDriver().getCurrentUrl();
+        Boolean iconTwitter = twitterIcon.startsWith("https://twitter.com/afdalanalytics");
+        Assert.assertTrue(iconTwitter);
         String twitterTitle = WebDriverRunner.getWebDriver().getTitle();
         Boolean titleTwitter = twitterTitle.contains("Twitter");
         System.out.println(twitterTitle);
         Assert.assertTrue(titleTwitter);
 //        Assert.assertEquals(twitterTitle,"Profile / Twitter");
 //        Assert.assertEquals(twitterTitle,"Afdal Analytics - أفضل التحليلات (@AfdalAnalytics) / Twitter");
+        closeWindow();
         switchTo().window(0);
         return  AfdalAnalyticsSignUpPageFactory.getSignUpPage();
     }
@@ -600,8 +605,9 @@ public class AfdalAnalyticsSignUpPage implements IAfdalAnalyticsSignUpPage{
 //        getInstagramFooterIcon.click();
         executeJavaScript("arguments[0].click();", getInstagramFooterIcon);
         switchTo().window(1);
-        boolean instagramIcon = WebDriverRunner.getWebDriver().getCurrentUrl().startsWith("https://www.instagram.com/afdalanalytics/");
-        Assert.assertTrue(instagramIcon);
+        String instagramIcon = WebDriverRunner.getWebDriver().getCurrentUrl();
+        Boolean iconInstagram = instagramIcon.startsWith("https://www.instagram.com/afdalanalytics/");
+        Assert.assertTrue(iconInstagram);
         closeWindow();
         switchTo().window(0);
         return  AfdalAnalyticsSignUpPageFactory.getSignUpPage();
@@ -611,10 +617,11 @@ public class AfdalAnalyticsSignUpPage implements IAfdalAnalyticsSignUpPage{
     public IAfdalAnalyticsSignUpPage verifyLinkedInIcon() {
         executeJavaScript("arguments[0].click();", getLinkedInFooterIcon);
         switchTo().window(1);
-        boolean linkedinFooterURL = WebDriverRunner.getWebDriver().getCurrentUrl().startsWith("https://www.linkedin.com/");
-            Assert.assertTrue(linkedinFooterURL);
-            String linkedinFooterTitle = WebDriverRunner.getWebDriver().getTitle();
-            Assert.assertEquals(linkedinFooterTitle,"Sign in | LinkedIn");
+        String linkedinFooterURL = WebDriverRunner.getWebDriver().getCurrentUrl();
+        Boolean urlFooterLinkedin = linkedinFooterURL.startsWith("https://www.linkedin.com/");
+        Assert.assertTrue(urlFooterLinkedin);
+        String linkedinFooterTitle = WebDriverRunner.getWebDriver().getTitle();
+        Assert.assertEquals(linkedinFooterTitle,"Sign in | LinkedIn");
         closeWindow();
         switchTo().window(0);
         return  AfdalAnalyticsSignUpPageFactory.getSignUpPage();
@@ -627,9 +634,12 @@ public class AfdalAnalyticsSignUpPage implements IAfdalAnalyticsSignUpPage{
         executeJavaScript("arguments[0].click();", getFacebookFooterIcon);
 
         switchTo().window(1);
-        boolean facebookUrl = WebDriverRunner.getWebDriver().getCurrentUrl().startsWith("https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FAfdal.Analytics");
-            Assert.assertTrue(facebookUrl);
+        String facebookUrl = WebDriverRunner.getWebDriver().getCurrentUrl();
+        Boolean urlFacebook = facebookUrl.startsWith("https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FAfdal.Analytics");
+        Assert.assertTrue(urlFacebook);
             String facebookTitle = WebDriverRunner.getWebDriver().getTitle();
+            Boolean titleFacebook = facebookTitle.contains("Facebook");
+            Assert.assertTrue(titleFacebook);
 //            Assert.assertEquals(facebookTitle,"Facebook");
 //        System.out.println(facebookTitle);
 //        Assert.assertTrue(Boolean.parseBoolean(facebookTitle), "Facebook");
