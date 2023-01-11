@@ -11,7 +11,8 @@ public class AfdalAnalyticsSignInImpl extends AfdalAnalyticsLoginPage implements
     @Override
     public void init()
     {
-        homePage = openAfdalAnalticsPage();
+
+     homePage = openAfdalAnalticsPage();
     }
 
     @Override

@@ -16,6 +16,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Afdal_analytics_Framework-main" target="11" />
       <module name="API_Module" target="11" />
     </bytecodeTargetLevel>
   </component>

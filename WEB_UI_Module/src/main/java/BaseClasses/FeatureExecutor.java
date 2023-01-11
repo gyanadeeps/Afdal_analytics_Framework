@@ -19,11 +19,15 @@ public class FeatureExecutor {
     public void execute() {
         features.forEach(f -> {
             String name = StringUtilInternal.beatifyCamelCaseString(f.getClass().getSimpleName());
-            performFeature(name, f);
+            try {
+                performFeature(name, f);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         });
     }
 
-    private void performFeature(String name, Feature feature) {
+    private void performFeature(String name, Feature feature) throws InterruptedException {
         log.info("INIT test-------> "+ feature + " in thread " + Thread.currentThread().getId());
         feature.init();
         log.info("Execute test-------> "+ feature + " in thread " + Thread.currentThread().getId());

@@ -4,5 +4,5 @@ public interface Feature {
 
     void init();
 
-    void execute();
+    void execute() throws InterruptedException;
 }

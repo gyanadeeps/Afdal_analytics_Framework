@@ -12,7 +12,8 @@
     <test name="Afdal Analytics Login Page Ui Validation">
         <classes>
             <class name="test.HomePage.AfdalLoginPageUiValidation"/>
-            <class name="test.HomePage.AfdalSignupPageValidation"/>
+            <class name="test.HomePage.AfdalSettingsValidation"/>
+            <class name="test.HomePage.AfdalPricingValidation"></class>
         </classes>
 
     </test>

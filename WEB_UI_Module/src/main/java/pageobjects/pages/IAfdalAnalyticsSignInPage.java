@@ -33,7 +33,10 @@ public interface IAfdalAnalyticsSignInPage
   IAfdalAnalyticsSignInPage Signin_with_google_N() throws InterruptedException;
 
   IAfdalAnalyticsSignInPage Signin_with_linkedIn_N() throws InterruptedException;
+  IAfdalAnalyticsSettings Switch_To_Settings_page();
 
+  IAfdalAnalyticsPricingPage Verify_Pricing_UI();
+  // IAfdalAnalyticsPricingPage Switch_To_PricingPage();
 
 
 }

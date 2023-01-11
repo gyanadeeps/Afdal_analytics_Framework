@@ -160,7 +160,7 @@ public class AfdalAnalyticsSignInPage implements IAfdalAnalyticsSignInPage
     public  IAfdalAnalyticsSignInPage Email_password_field(){
         refresh();
         getSignin_Button.waitUntil(Condition.visible,3000).click();
-        getEmailInput.sendKeys("Demo@afdal.com");
+        getEmailInput.sendKeys("demo@afdal.com");
         getPasswordInput.sendKeys("demo2022");
         getCheckBoxbutton.click();
         getSubmit_SignInButton.hover().click();
@@ -176,7 +176,7 @@ public class AfdalAnalyticsSignInPage implements IAfdalAnalyticsSignInPage
     public IAfdalAnalyticsSignInPage Email_empty_password_field_N() {
         refresh();
         getSignin_Button.click();
-        getEmailInput.sendKeys("Demo@afdal.com");
+        getEmailInput.sendKeys("demo@afdal.com");
         getCheckBoxbutton.click();
         getSubmit_SignInButton.isEnabled();
         return AfdalPageFactory.getHomepage();
@@ -307,7 +307,7 @@ public class AfdalAnalyticsSignInPage implements IAfdalAnalyticsSignInPage
         Boolean title = googleTitle.contains("Google Accounts");
         Assert.assertTrue(title);
 //        Assert.assertEquals(googleTitle,"Sign in - Google Accounts");
-        System.out.println(googleTitle);
+        System.out.println("googleTitle");
 //        Assert.assertTrue(Boolean.parseBoolean(googleTitle), "Sign in - Google Accounts");
 //        Assert.assertEquals(googleTitle, "Sign in - Google Accounts");
         closeWindow();
@@ -330,9 +330,21 @@ public class AfdalAnalyticsSignInPage implements IAfdalAnalyticsSignInPage
         return AfdalPageFactory.getHomepage();
     }
 
+    @Override
+    public IAfdalAnalyticsSettings Switch_To_Settings_page() {
 
+        return AfdalPageFactory.getSettings();
+    }
 
+    @Override
+    public IAfdalAnalyticsPricingPage Verify_Pricing_UI() {
+        return AfdalPageFactory.getPricing();
+            }
 
-
+    /*@Override
+    public IAfdalAnalyticsPricingPage Switch_To_PricingPage() {
+        return AfdalPageFactory.getPricing();
+    }
+*/
 
 }
