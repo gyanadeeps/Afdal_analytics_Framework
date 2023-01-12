@@ -1,7 +1,6 @@
 package pageobjects.PageFactoryClasses;
 
 
-import org.jetbrains.annotations.NotNull;
 import pageobjects.pages.*;
 
 
@@ -20,6 +19,10 @@ public class AfdalPageFactory extends PageFactory
     {
 
         return wrap(new AfdalAnalyticsPricingPage(), IAfdalAnalyticsPricingPage.class);
+    }
+    public  static IAfdalAnalyticsSignUpArPage getNewSignUp()
+    {
+        return wrap(new AfdalAnalyticsSignUpArPage(),IAfdalAnalyticsSignUpArPage.class);
     }
 
 }

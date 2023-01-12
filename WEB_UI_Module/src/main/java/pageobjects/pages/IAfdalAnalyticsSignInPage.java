@@ -37,6 +37,7 @@ public interface IAfdalAnalyticsSignInPage
 
   IAfdalAnalyticsPricingPage Verify_Pricing_UI();
   // IAfdalAnalyticsPricingPage Switch_To_PricingPage();
+  IAfdalAnalyticsSignUpArPage Switch_to_SignUp_Page();
 
 
 }

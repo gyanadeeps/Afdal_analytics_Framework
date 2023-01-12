@@ -324,7 +324,7 @@ public class AfdalAnalyticsSignInPage implements IAfdalAnalyticsSignInPage
         boolean linkedinURL = WebDriverRunner.getWebDriver().getCurrentUrl().startsWith("https://www.linkedin.com/");
         Assert.assertTrue(linkedinURL);
         String linkedinTitle = WebDriverRunner.getWebDriver().getTitle();
-        Assert.assertEquals(linkedinTitle,"LinkedIn Login, Sign in | LinkedIn");
+        Assert.assertEquals(linkedinTitle,"LinkedIn_H_Icon Login, Sign in | LinkedIn_H_Icon");
         closeWindow();
         switchTo().window(0);
         return AfdalPageFactory.getHomepage();
@@ -340,6 +340,11 @@ public class AfdalAnalyticsSignInPage implements IAfdalAnalyticsSignInPage
     public IAfdalAnalyticsPricingPage Verify_Pricing_UI() {
         return AfdalPageFactory.getPricing();
             }
+
+    @Override
+    public IAfdalAnalyticsSignUpArPage Switch_to_SignUp_Page() {
+        return AfdalPageFactory.getNewSignUp();
+    }
 
     /*@Override
     public IAfdalAnalyticsPricingPage Switch_To_PricingPage() {

@@ -6,7 +6,8 @@ import org.testng.annotations.Test;
 
 public class AfdalPricingValidation extends AfdalAnalyticsBaseTest {
     @Test(description = "Verify Pricing Page")
-    public void verifyPricing_Arabic() {
+    public void verifyPricing_Arabic()
+    {
 
         add(new AfdalAnalyticsPricingImpl()).trigger();
     }
