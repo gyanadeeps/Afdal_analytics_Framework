@@ -76,6 +76,7 @@ public class AfdalAnalyticsSignUpArPage implements IAfdalAnalyticsSignUpArPage {
             //Thread.sleep(5000);
             Subscribe_Button_On_SignUp_Page.click();
             Thread.sleep(4000);
+
         String Expected_Err_MSG = Enter_Phone_Or_Email_Error.getText();
         String Actual_Err_MSG ="الهاتف أو البريد الإلكتروني مطلوب";
         Assert.assertEquals(Expected_Err_MSG, Actual_Err_MSG);
@@ -184,7 +185,8 @@ public class AfdalAnalyticsSignUpArPage implements IAfdalAnalyticsSignUpArPage {
     }
 
     @Override
-    public IAfdalAnalyticsSignUpArPage SignUp_With_Valid_Gmail_By_Close_the_Popup_N() {
+    public IAfdalAnalyticsSignUpArPage SignUp_With_Valid_Gmail_By_Close_the_Popup_N()
+    {
 
         return AfdalPageFactory.getNewSignUp();
     }
