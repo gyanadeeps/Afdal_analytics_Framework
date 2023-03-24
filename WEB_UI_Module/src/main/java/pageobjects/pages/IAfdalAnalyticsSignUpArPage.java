@@ -10,12 +10,15 @@ public interface IAfdalAnalyticsSignUpArPage {
     IAfdalAnalyticsSignUpArPage Sign_Up_Verify_Valid_phone_No() throws InterruptedException;
 
     IAfdalAnalyticsSignUpArPage Sign_Up_With_Valid_Gmail() throws InterruptedException;
-    IAfdalAnalyticsSignUpArPage Sign_Up_With_Valid_LinkedIN();
+
+    IAfdalAnalyticsSignUpArPage Sign_Up_With_Valid_LinkedIN() throws InterruptedException;
 
     IAfdalAnalyticsSignUpArPage Sign_Up_With_Valid_Email() throws InterruptedException;
 
-    IAfdalAnalyticsSignUpArPage SignUp_With_Valid_Gmail_By_Close_the_Popup_N();
+    IAfdalAnalyticsSignUpArPage SignUp_With_Valid_Gmail_By_Close_the_Popup_N() throws InterruptedException;
+    IAfdalAnalyticsSignUpArPage SignUp_With_Valid_PhoneNo_Without_Checked_afdal_terms_checkbox_N();
+    IAfdalAnalyticsSignUpArPage SignUp_With_Valid_Email_Without_Checked_afdal_terms_checkbox_N();
+    IAfdalAnalyticsSignUpArPage SignUp_Page_Step2_Password_validation_N_lessThan8();
 
-
-
+    IAfdalAnalyticsSignUpArPage SignUp_Page_Step2_Password_validation_EqlsOrMoreThan8();
 }

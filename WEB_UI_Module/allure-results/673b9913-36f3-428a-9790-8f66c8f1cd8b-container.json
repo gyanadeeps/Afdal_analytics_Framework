@@ -1,0 +1,1 @@
+{"uuid":"673b9913-36f3-428a-9790-8f66c8f1cd8b","name":"Default Suite","children":["33ae90d6-65f9-479e-b6dc-f16d8af3ba0f"],"befores":[],"afters":[{"name":"afterSuite","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1679659132214,"stop":1679659132214}],"links":[],"start":1679659044254,"stop":1679659132214}

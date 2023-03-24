@@ -1,0 +1,1 @@
+{"uuid":"4aec242c-be58-4eb7-8ff0-7ff52f997638","name":"Afdal Analytics Validation Suite","children":["7278018f-8b9d-4ad1-9b1c-b9ee2260e088"],"befores":[],"afters":[{"name":"afterSuite","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1679435094445,"stop":1679435094445}],"links":[],"start":1679435050409,"stop":1679435094445}
