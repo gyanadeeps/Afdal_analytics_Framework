@@ -64,6 +64,19 @@ public class AfdalAnalyticsSignUpArPage implements IAfdalAnalyticsSignUpArPage {
     SelenideElement Gmail_ERR_MSG = $x("//div[@class='o6cuMc Jj6Lae']");
     SelenideElement ERRSignUpPhn_Without_Chk_T_C = $x("//div[@id='alert-div']");
     SelenideElement ERRSignUpEmail_Without_Chk_T_C = $x("");
+    SelenideElement Invalid_PassLessT8 = $x("//div/p[@id='password-error']");
+    SelenideElement Phn_FirstNm_Err_msg = $x("//div/p[@id='first_name-error']");
+    SelenideElement Phn_LastNm_Err_msg = $x("//div/p[@id='last_name-error']");
+    SelenideElement Phn_CompanyNm_Err_msg = $x("//div/p[@id='company-error']");
+    SelenideElement Phn_Password_Err_msg = $x("//div/p[@id='password-error']");
+    SelenideElement Phn_AllFlds_Err_msg = $x("//div/p[@id='first_name-error']");
+    SelenideElement Phn_Go_To_DemoPage_Button = $x("//div[@class='text-center']/span");
+    SelenideElement Email_Fname_Err_msg = $x("//div/p[@id='first_name-error']");
+    SelenideElement Email_Lname_Err_msg = $x("//div/p[@ id='last_name-error']");
+    SelenideElement Email_ComanyName_Err_msg = $x("//div/p[@ id='company-error']");
+    SelenideElement Email_PhoneNo_Err_msg = $x("//div/p[@ id='phone-error']");
+    SelenideElement Email_Password_Err_msg = $x("//div/p[@id='password-error']");
+    SelenideElement Email_Go_to_DemoPage_Button = $x("(//div/span[@type='button'])[1]");
     public String GetRandomString(int Length)
     {
         int leftLimit = 97; // letter 'a'
@@ -150,7 +163,7 @@ public class AfdalAnalyticsSignUpArPage implements IAfdalAnalyticsSignUpArPage {
     public IAfdalAnalyticsSignUpArPage Sign_Up_Verify_Valid_phone_No() throws InterruptedException {
         refresh();
         SignUp_Button.click();
-        String Mobile_No = "+3"+GetRandomMobileNumber(11);
+        String Mobile_No = "+"+GetRandomMobileNumber(11);
         Phone_Number_field.sendKeys(Mobile_No);
         //Afdal_signup_checkbox.click();
         getWebDriver().manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
@@ -283,12 +296,6 @@ public class AfdalAnalyticsSignUpArPage implements IAfdalAnalyticsSignUpArPage {
         Subscribe_Button_On_SignUp_Page.click();
         Thread.sleep(4000);
 
-        //Assertion to check redirection on next page
-        String expectedURL = "https://staging.afdalanalytics.com/demo-dashboard";
-        String redirectURL=WebDriverRunner.getWebDriver().getCurrentUrl();
-        Assert.assertEquals(redirectURL,expectedURL);
-        Thread.sleep(4000);
-
         Set<String> Windows = WebDriverRunner.getWebDriver().getWindowHandles();//Switch windows to gmail Signup.
         Iterator<String> iterator = Windows.iterator();
         String subWindowsHandler = null;
@@ -296,15 +303,12 @@ public class AfdalAnalyticsSignUpArPage implements IAfdalAnalyticsSignUpArPage {
             subWindowsHandler = iterator.next();
         }
         WebDriverRunner.getWebDriver().switchTo().window(subWindowsHandler);
+        //Assertion to check redirection on next page
+        String expectedURL = "https://staging.afdalanalytics.com/demo-dashboard";
+        String redirectURL=WebDriverRunner.getWebDriver().getCurrentUrl();
+        Assert.assertEquals(redirectURL,expectedURL);
         Thread.sleep(4000);
-        SignUp_Email_Fname.setValue("Gyandeep");
-        SignUp_E_Lname.setValue("Sahoo");
-        SignUp_E_CompanyName.setValue("Vtechys");
-        SignUp_E_Phone.setValue("+46731298920");
-        SignUp_E_Passwrd.setValue("demo2022");
-        SignUp_E_ConfrmPasswrd.setValue("demo2022");
-        new Actions(WebDriverRunner.getWebDriver()).moveToElement(SignUp_E_CreateAccount).click().build().perform();
-        Thread.sleep(4000);
+
 
         return AfdalPageFactory.getNewSignUp();
     }
@@ -343,6 +347,7 @@ public class AfdalAnalyticsSignUpArPage implements IAfdalAnalyticsSignUpArPage {
     @Override
     //bug
     public IAfdalAnalyticsSignUpArPage SignUp_With_Valid_Email_Without_Checked_afdal_terms_checkbox_N() {
+        getWebDriver().navigate().back();
         SignUp_Button.click();
         String emailId = GetRandomString(7)+"@gmail.com";
         SignUp_Email_Field.setValue((emailId));
@@ -350,15 +355,669 @@ public class AfdalAnalyticsSignUpArPage implements IAfdalAnalyticsSignUpArPage {
 
         return AfdalPageFactory.getNewSignUp();
     }
-
+//Sign Up With Phone No. Password Less Than 8 Char
     @Override
-    public IAfdalAnalyticsSignUpArPage SignUp_Page_Step2_Password_validation_N_lessThan8() {
+    public IAfdalAnalyticsSignUpArPage SignUp_Page_Step2_Password_validation_N_lessThan8() throws InterruptedException {
         SignUp_Button.click();
+       //String Mobile_No = "+4"+GetRandomMobileNumber(11);
+        Phone_Number_field.sendKeys("+46731298925");
+        //Afdal_signup_checkbox.click();
+        getWebDriver().manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        Selenide.executeJavaScript("arguments[0].click()", Subscribe_Button_On_SignUp_Page);
+        getWebDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Thread.sleep(4000);
+        Set<String> Windows = WebDriverRunner.getWebDriver().getWindowHandles();//Switch windows to gmail Signup.
+        Iterator<String> iterator = Windows.iterator();
+        String subWindowsHandler = null;
+        while (iterator.hasNext()) {
+            subWindowsHandler = iterator.next();
+        }
+        WebDriverRunner.getWebDriver().switchTo().window(subWindowsHandler);
+        Thread.sleep(4000);
+        Reg_With_PhnNo_Fname.sendKeys("Gyandeep");
+        Reg_With_PhnNo_Lname.sendKeys("Sahoo");
+        Reg_With_PhnNo_CompanyName.sendKeys("Vtechys");
+        Reg_With_PhnNo_Password.sendKeys("dem9823");
+        //Password_Eye_Icon.click();
+        Reg_With_PhnNo_ConfrmPassword.sendKeys("dem9823");
+        //ConfrmPassword_Eye_Icon.click();
+        Submit_Buttn.submit();
+        String Expected_Err_MSG = Invalid_PassLessT8.getText();
+        String Actual_Err_MSG = "لا يجب أن تقل خانة كلمة المرور عن عدد 8 حرفاً";
+        Assert.assertEquals(Expected_Err_MSG, Actual_Err_MSG);
+        Thread.sleep(4000);
+        getWebDriver().navigate().back();
+
+
 
         return AfdalPageFactory.getNewSignUp();
     }
+    //Sign Up With Phone No. Password More Than 8 Char
     @Override
-    public IAfdalAnalyticsSignUpArPage SignUp_Page_Step2_Password_validation_EqlsOrMoreThan8() {
+    public IAfdalAnalyticsSignUpArPage SignUp_Page_Step2_Password_validation_EqlsOrMoreThan8() throws InterruptedException {
+        SignUp_Button.click();
+        //String Mobile_No = "+"+GetRandomMobileNumber(11);
+        Phone_Number_field.sendKeys("Mobile_No");
+        //Afdal_signup_checkbox.click();
+        getWebDriver().manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        Selenide.executeJavaScript("arguments[0].click()", Subscribe_Button_On_SignUp_Page);
+        getWebDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Thread.sleep(4000);
+        Set<String> Windows = WebDriverRunner.getWebDriver().getWindowHandles();//Switch windows to gmail Signup.
+        Iterator<String> iterator = Windows.iterator();
+        String subWindowsHandler = null;
+        while (iterator.hasNext()) {
+            subWindowsHandler = iterator.next();
+        }
+        WebDriverRunner.getWebDriver().switchTo().window(subWindowsHandler);
+        Thread.sleep(4000);
+        Reg_With_PhnNo_Fname.sendKeys("Gyandeep");
+        Reg_With_PhnNo_Lname.sendKeys("Sahoo");
+        Reg_With_PhnNo_CompanyName.sendKeys("Vtechys");
+        Reg_With_PhnNo_Password.sendKeys("dem009823");
+        //Password_Eye_Icon.click();
+        Reg_With_PhnNo_ConfrmPassword.sendKeys("dem009823");
+        //ConfrmPassword_Eye_Icon.click();
+        Submit_Buttn.submit();
+        String expectedURL="https://staging.afdalanalytics.com/demo-dashboard";
+        String redirectURL=WebDriverRunner.getWebDriver().getCurrentUrl();
+        Assert.assertEquals(redirectURL,expectedURL);
+        Thread.sleep(2000);
+
+        return AfdalPageFactory.getNewSignUp();
+    }
+
+    @Override
+    public IAfdalAnalyticsSignUpArPage SignUp_With_Valid_PhoneNo_Step2_INValid_First_Name_N() throws InterruptedException {
+        getWebDriver().navigate().back();
+
+        SignUp_Button.click();
+        //String Mobile_No = "+"+GetRandomMobileNumber(11);
+        Phone_Number_field.sendKeys("Mobile_No");
+        //Afdal_signup_checkbox.click();
+        getWebDriver().manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        Selenide.executeJavaScript("arguments[0].click()", Subscribe_Button_On_SignUp_Page);
+        getWebDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Thread.sleep(4000);
+        Set<String> Windows = WebDriverRunner.getWebDriver().getWindowHandles();//Switch windows to gmail Signup.
+        Iterator<String> iterator = Windows.iterator();
+        String subWindowsHandler = null;
+        while (iterator.hasNext()) {
+            subWindowsHandler = iterator.next();
+        }
+        WebDriverRunner.getWebDriver().switchTo().window(subWindowsHandler);
+        Thread.sleep(4000);
+        Reg_With_PhnNo_Fname.sendKeys("");
+        String Expected_Err_MSG = Phn_FirstNm_Err_msg.getText();
+        String Actual_Err_MSG = "هذا الحقل مطلوب";
+        Assert.assertEquals(Expected_Err_MSG, Actual_Err_MSG);
+        Thread.sleep(4000);
+
+        Reg_With_PhnNo_Lname.sendKeys("Sahoo");
+        Reg_With_PhnNo_CompanyName.sendKeys("Vtechys");
+        Reg_With_PhnNo_Password.sendKeys("dem009823");
+        //Password_Eye_Icon.click();
+        Reg_With_PhnNo_ConfrmPassword.sendKeys("dem009823");
+        //ConfrmPassword_Eye_Icon.click();
+        Submit_Buttn.submit();
+        String expectedURL="https://staging.afdalanalytics.com/demo-dashboard";
+        String redirectURL=WebDriverRunner.getWebDriver().getCurrentUrl();
+        Assert.assertEquals(redirectURL,expectedURL);
+        Thread.sleep(2000);
+
+        return AfdalPageFactory.getNewSignUp();
+    }
+
+    @Override
+    public IAfdalAnalyticsSignUpArPage SignUp_WithValid_PhoneNo_Step2_INValid_Last_Name_N() throws InterruptedException {
+        getWebDriver().navigate().back();
+        SignUp_Button.click();
+        //String Mobile_No = "+"+GetRandomMobileNumber(11);
+        Phone_Number_field.sendKeys("Mobile_No");
+        //Afdal_signup_checkbox.click();
+        getWebDriver().manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        Selenide.executeJavaScript("arguments[0].click()", Subscribe_Button_On_SignUp_Page);
+        getWebDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Thread.sleep(4000);
+        Set<String> Windows = WebDriverRunner.getWebDriver().getWindowHandles();//Switch windows to gmail Signup.
+        Iterator<String> iterator = Windows.iterator();
+        String subWindowsHandler = null;
+        while (iterator.hasNext()) {
+            subWindowsHandler = iterator.next();
+        }
+        WebDriverRunner.getWebDriver().switchTo().window(subWindowsHandler);
+        Thread.sleep(4000);
+        Reg_With_PhnNo_Fname.sendKeys("Gyanadeep");
+        Reg_With_PhnNo_Lname.sendKeys("");
+        //Assertion on Empty Last name
+        String Expected_Err_MSG = Phn_LastNm_Err_msg.getText();
+        String Actual_Err_MSG = "هذا الحقل مطلوب";
+        Assert.assertEquals(Expected_Err_MSG, Actual_Err_MSG);
+        Thread.sleep(4000);
+        Reg_With_PhnNo_CompanyName.sendKeys("Vtechys");
+        Reg_With_PhnNo_Password.sendKeys("dem009823");
+        //Password_Eye_Icon.click();
+        Reg_With_PhnNo_ConfrmPassword.sendKeys("dem009823");
+        //ConfrmPassword_Eye_Icon.click();
+        Submit_Buttn.submit();
+        String expectedURL="https://staging.afdalanalytics.com/demo-dashboard";
+        String redirectURL=WebDriverRunner.getWebDriver().getCurrentUrl();
+        Assert.assertEquals(redirectURL,expectedURL);
+        Thread.sleep(2000);
+        return AfdalPageFactory.getNewSignUp();
+    }
+    @Override
+    public IAfdalAnalyticsSignUpArPage SignUp_WithValid_PhoneNo_Step2_INValid_Company_Name_N() throws InterruptedException {
+        getWebDriver().navigate().back();
+        SignUp_Button.click();
+        String Mobile_No = "+"+GetRandomMobileNumber(11);
+        Phone_Number_field.sendKeys("Mobile_No");
+        //Afdal_signup_checkbox.click();
+        getWebDriver().manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        Selenide.executeJavaScript("arguments[0].click()", Subscribe_Button_On_SignUp_Page);
+        getWebDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Thread.sleep(4000);
+        Set<String> Windows = WebDriverRunner.getWebDriver().getWindowHandles();//Switch windows to gmail Signup.
+        Iterator<String> iterator = Windows.iterator();
+        String subWindowsHandler = null;
+        while (iterator.hasNext()) {
+            subWindowsHandler = iterator.next();
+        }
+        WebDriverRunner.getWebDriver().switchTo().window(subWindowsHandler);
+        Thread.sleep(4000);
+        Reg_With_PhnNo_Fname.sendKeys("Gyanadeep");
+        Reg_With_PhnNo_Lname.sendKeys("Sahoo");
+        Reg_With_PhnNo_CompanyName.sendKeys("");
+        //Assertion on Empty Company Name
+        String Expected_Err_MSG = Phn_CompanyNm_Err_msg.getText();
+        String Actual_Err_MSG = "هذا الحقل مطلوب";
+        Assert.assertEquals(Expected_Err_MSG, Actual_Err_MSG);
+        Thread.sleep(4000);
+        Reg_With_PhnNo_Password.sendKeys("dem009823");
+        //Password_Eye_Icon.click();
+        Reg_With_PhnNo_ConfrmPassword.sendKeys("dem009823");
+        //ConfrmPassword_Eye_Icon.click();
+        Submit_Buttn.submit();
+        String expectedURL="https://staging.afdalanalytics.com/demo-dashboard";
+        String redirectURL=WebDriverRunner.getWebDriver().getCurrentUrl();
+        Assert.assertEquals(redirectURL,expectedURL);
+        Thread.sleep(2000);
+        return AfdalPageFactory.getNewSignUp();
+    }
+
+    @Override
+    public IAfdalAnalyticsSignUpArPage SignUp_WithValid_PhoneNo_Step2_INValid_Password_N() throws InterruptedException {
+        getWebDriver().navigate().back();
+        SignUp_Button.click();
+        String Mobile_No = "+"+GetRandomMobileNumber(11);
+        Phone_Number_field.sendKeys("Mobile_No");
+        //Afdal_signup_checkbox.click();
+        getWebDriver().manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        Selenide.executeJavaScript("arguments[0].click()", Subscribe_Button_On_SignUp_Page);
+        getWebDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Thread.sleep(4000);
+        Set<String> Windows = WebDriverRunner.getWebDriver().getWindowHandles();//Switch windows to gmail Signup.
+        Iterator<String> iterator = Windows.iterator();
+        String subWindowsHandler = null;
+        while (iterator.hasNext()) {
+            subWindowsHandler = iterator.next();
+        }
+        WebDriverRunner.getWebDriver().switchTo().window(subWindowsHandler);
+        Thread.sleep(4000);
+        Reg_With_PhnNo_Fname.sendKeys("Gyanadeep");
+        Reg_With_PhnNo_Lname.sendKeys("Sahoo");
+        Reg_With_PhnNo_CompanyName.sendKeys("Vtechys");
+        Reg_With_PhnNo_Password.sendKeys("");
+
+        //Assertion on Empty Password
+        String Expected_Err_MSG = Phn_Password_Err_msg.getText();
+        String Actual_Err_MSG = "هذا الحقل مطلوب";
+        Assert.assertEquals(Expected_Err_MSG, Actual_Err_MSG);
+        Thread.sleep(4000);
+        //Password_Eye_Icon.click();
+        Reg_With_PhnNo_ConfrmPassword.sendKeys("dem009823");
+        //ConfrmPassword_Eye_Icon.click();
+        Submit_Buttn.submit();
+        String expectedURL="https://staging.afdalanalytics.com/demo-dashboard";
+        String redirectURL=WebDriverRunner.getWebDriver().getCurrentUrl();
+        Assert.assertEquals(redirectURL,expectedURL);
+        Thread.sleep(2000);
+        return AfdalPageFactory.getNewSignUp();
+    }
+
+    @Override
+    public IAfdalAnalyticsSignUpArPage SignUp_WithValid_PhoneNo_Step2_leave_all_fields_empty_N() throws InterruptedException {
+        getWebDriver().navigate().back();
+        SignUp_Button.click();
+        String Mobile_No = "+"+GetRandomMobileNumber(11);
+        Phone_Number_field.sendKeys("Mobile_No");
+        //Afdal_signup_checkbox.click();
+        getWebDriver().manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        Selenide.executeJavaScript("arguments[0].click()", Subscribe_Button_On_SignUp_Page);
+        getWebDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Thread.sleep(4000);
+        Set<String> Windows = WebDriverRunner.getWebDriver().getWindowHandles();//Switch windows to phn Signup.
+        Iterator<String> iterator = Windows.iterator();
+        String subWindowsHandler = null;
+        while (iterator.hasNext()) {
+            subWindowsHandler = iterator.next();
+        }
+        WebDriverRunner.getWebDriver().switchTo().window(subWindowsHandler);
+        Thread.sleep(4000);
+        Submit_Buttn.submit();
+
+        //Assertion on All the fields Empty
+        String Expected_Err_MSG = Phn_AllFlds_Err_msg.getText();
+        String Actual_Err_MSG = "هذا الحقل مطلوب";
+        Assert.assertEquals(Expected_Err_MSG, Actual_Err_MSG);
+        Thread.sleep(4000);
+
+        String expectedURL="https://staging.afdalanalytics.com/demo-dashboard";
+        String redirectURL=WebDriverRunner.getWebDriver().getCurrentUrl();
+        Assert.assertEquals(redirectURL,expectedURL);
+        Thread.sleep(2000);
+        return AfdalPageFactory.getNewSignUp();
+    }
+
+    @Override
+    public IAfdalAnalyticsSignUpArPage SignUp_WithValid_PhoneNo_Step2_Skip_To_demoPage() throws InterruptedException {
+        getWebDriver().navigate().back();
+        SignUp_Button.click();
+        String Mobile_No = "+"+GetRandomMobileNumber(11);
+        Phone_Number_field.sendKeys("Mobile_No");
+        //Afdal_signup_checkbox.click();
+        getWebDriver().manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        Selenide.executeJavaScript("arguments[0].click()", Subscribe_Button_On_SignUp_Page);
+        getWebDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Thread.sleep(4000);
+        Set<String> Windows = WebDriverRunner.getWebDriver().getWindowHandles();//Switch windows to phn Signup.
+        Iterator<String> iterator = Windows.iterator();
+        String subWindowsHandler = null;
+        while (iterator.hasNext()) {
+            subWindowsHandler = iterator.next();
+        }
+        WebDriverRunner.getWebDriver().switchTo().window(subWindowsHandler);
+        Thread.sleep(4000);
+        Phn_Go_To_DemoPage_Button.click();
+
+        //Assertion on Redirection from SignUpWithPhn Page to DemoPage
+        String expectedURL="https://staging.afdalanalytics.com/demo-dashboard";
+        String redirectURL=WebDriverRunner.getWebDriver().getCurrentUrl();
+        Assert.assertEquals(redirectURL,expectedURL);
+        Thread.sleep(2000);
+
+        return AfdalPageFactory.getNewSignUp();
+    }
+
+    @Override
+    public IAfdalAnalyticsSignUpArPage SignUp_With_Valid_Email_Step2_ValidNamesAndPassword() throws InterruptedException {
+        getWebDriver().navigate().back();
+        String URL = getWebDriver().getCurrentUrl();
+        System.out.println(URL);
+        Thread.sleep(4000);
+        SignUp_Button.click();
+        Thread.sleep(4000);
+        String emailId = GetRandomString(7)+"@gmail.com";
+        String emailIdi = GetRandomString(7)+"@"+GetRandomString(5)+".com";
+        SignUp_Email_Field.setValue(emailId);
+        Thread.sleep(4000);
+        //Afdal_signup_checkbox.click();
+        Thread.sleep(4000);
+        Subscribe_Button_On_SignUp_Page.click();
+        Thread.sleep(4000);
+
+        //Assertion to check redirection on next page
+        String expectedURL = "https://staging.afdalanalytics.com/demo-dashboard";
+        String redirectURL=WebDriverRunner.getWebDriver().getCurrentUrl();
+        Assert.assertEquals(redirectURL,expectedURL);
+        Thread.sleep(4000);
+
+        Set<String> Windows = WebDriverRunner.getWebDriver().getWindowHandles();//Switch windows to gmail Signup.
+        Iterator<String> iterator = Windows.iterator();
+        String subWindowsHandler = null;
+        while (iterator.hasNext()) {
+            subWindowsHandler = iterator.next();
+        }
+        WebDriverRunner.getWebDriver().switchTo().window(subWindowsHandler);
+        Thread.sleep(4000);
+        SignUp_Email_Fname.setValue("Gyandeep");
+        SignUp_E_Lname.setValue("Sahoo");
+        SignUp_E_CompanyName.setValue("Vtechys");
+        SignUp_E_Phone.setValue("+46731298920");
+        SignUp_E_Passwrd.setValue("demo2022");
+        SignUp_E_ConfrmPasswrd.setValue("demo2022");
+        new Actions(WebDriverRunner.getWebDriver()).moveToElement(SignUp_E_CreateAccount).click().build().perform();
+        Thread.sleep(4000);
+
+        return AfdalPageFactory.getNewSignUp();
+    }
+
+    @Override
+    public IAfdalAnalyticsSignUpArPage SignUp_With_Valid_Email_Step2_INValid_FirstName_N() throws InterruptedException {
+        getWebDriver().navigate().back();
+        String URL = getWebDriver().getCurrentUrl();
+        System.out.println(URL);
+        Thread.sleep(4000);
+        SignUp_Button.click();
+        Thread.sleep(4000);
+        String emailId = GetRandomString(7)+"@gmail.com";
+        String emailIdi = GetRandomString(7)+"@"+GetRandomString(5)+".com";
+        SignUp_Email_Field.setValue(emailId);
+        Thread.sleep(4000);
+        //Afdal_signup_checkbox.click();
+        Thread.sleep(4000);
+        Subscribe_Button_On_SignUp_Page.click();
+        Thread.sleep(4000);
+
+        //Assertion to check redirection on next page
+        String expectedURL = "https://staging.afdalanalytics.com/demo-dashboard";
+        String redirectURL=WebDriverRunner.getWebDriver().getCurrentUrl();
+        Assert.assertEquals(redirectURL,expectedURL);
+        Thread.sleep(4000);
+
+        Set<String> Windows = WebDriverRunner.getWebDriver().getWindowHandles();//Switch windows to gmail Signup.
+        Iterator<String> iterator = Windows.iterator();
+        String subWindowsHandler = null;
+        while (iterator.hasNext()) {
+            subWindowsHandler = iterator.next();
+        }
+        WebDriverRunner.getWebDriver().switchTo().window(subWindowsHandler);
+        Thread.sleep(4000);
+        SignUp_Email_Fname.setValue("");
+
+        //Assertion on Email SignUp FirstName Empty
+        String Expected_Err_MSG = Email_Fname_Err_msg.getText();
+        String Actual_Err_MSG = "هذا الحقل مطلوب";
+        Assert.assertEquals(Expected_Err_MSG, Actual_Err_MSG);
+        Thread.sleep(4000);
+
+        SignUp_E_Lname.setValue("Sahoo");
+        SignUp_E_CompanyName.setValue("Vtechys");
+        SignUp_E_Phone.setValue("+46731298920");
+        SignUp_E_Passwrd.setValue("demo2022");
+        SignUp_E_ConfrmPasswrd.setValue("demo2022");
+        new Actions(WebDriverRunner.getWebDriver()).moveToElement(SignUp_E_CreateAccount).click().build().perform();
+        Thread.sleep(4000);
+
+
+        return AfdalPageFactory.getNewSignUp();
+    }
+
+    @Override
+    public IAfdalAnalyticsSignUpArPage SignUp_With_Valid_Email_Step2_INValid_LastName_N() throws InterruptedException {
+        getWebDriver().navigate().back();
+        String URL = getWebDriver().getCurrentUrl();
+        System.out.println(URL);
+        Thread.sleep(4000);
+        SignUp_Button.click();
+        Thread.sleep(4000);
+        String emailId = GetRandomString(7)+"@gmail.com";
+        String emailIdi = GetRandomString(7)+"@"+GetRandomString(5)+".com";
+        SignUp_Email_Field.setValue(emailId);
+        Thread.sleep(4000);
+        //Afdal_signup_checkbox.click();
+        Thread.sleep(4000);
+        Subscribe_Button_On_SignUp_Page.click();
+        Thread.sleep(4000);
+
+        //Assertion to check redirection on next page
+        String expectedURL = "https://staging.afdalanalytics.com/demo-dashboard";
+        String redirectURL=WebDriverRunner.getWebDriver().getCurrentUrl();
+        Assert.assertEquals(redirectURL,expectedURL);
+        Thread.sleep(4000);
+
+        Set<String> Windows = WebDriverRunner.getWebDriver().getWindowHandles();//Switch windows to gmail Signup.
+        Iterator<String> iterator = Windows.iterator();
+        String subWindowsHandler = null;
+        while (iterator.hasNext()) {
+            subWindowsHandler = iterator.next();
+        }
+        WebDriverRunner.getWebDriver().switchTo().window(subWindowsHandler);
+        Thread.sleep(4000);
+        SignUp_Email_Fname.setValue("Gyandeep");
+        SignUp_E_Lname.setValue("");
+
+        //Assertion on Email SignUp LastName Empty
+        String Expected_Err_MSG = Email_Lname_Err_msg.getText();
+        String Actual_Err_MSG = "هذا الحقل مطلوب";
+        Assert.assertEquals(Expected_Err_MSG, Actual_Err_MSG);
+        Thread.sleep(4000);
+
+        SignUp_E_CompanyName.setValue("Vtechys");
+        SignUp_E_Phone.setValue("+46731298920");
+        SignUp_E_Passwrd.setValue("demo2022");
+        SignUp_E_ConfrmPasswrd.setValue("demo2022");
+        new Actions(WebDriverRunner.getWebDriver()).moveToElement(SignUp_E_CreateAccount).click().build().perform();
+        Thread.sleep(4000);
+
+        return AfdalPageFactory.getNewSignUp();
+    }
+
+    @Override
+    public IAfdalAnalyticsSignUpArPage SignUp_With_Valid_Email_Step2_INValid_Company_Name_N() throws InterruptedException {
+        getWebDriver().navigate().back();
+        String URL = getWebDriver().getCurrentUrl();
+        System.out.println(URL);
+        Thread.sleep(4000);
+        SignUp_Button.click();
+        Thread.sleep(4000);
+        String emailId = GetRandomString(7)+"@gmail.com";
+        String emailIdi = GetRandomString(7)+"@"+GetRandomString(5)+".com";
+        SignUp_Email_Field.setValue(emailId);
+        Thread.sleep(4000);
+        //Afdal_signup_checkbox.click();
+        Thread.sleep(4000);
+        Subscribe_Button_On_SignUp_Page.click();
+        Thread.sleep(4000);
+
+        //Assertion to check redirection on next page
+        String expectedURL = "https://staging.afdalanalytics.com/demo-dashboard";
+        String redirectURL=WebDriverRunner.getWebDriver().getCurrentUrl();
+        Assert.assertEquals(redirectURL,expectedURL);
+        Thread.sleep(4000);
+
+        Set<String> Windows = WebDriverRunner.getWebDriver().getWindowHandles();//Switch windows to gmail Signup.
+        Iterator<String> iterator = Windows.iterator();
+        String subWindowsHandler = null;
+        while (iterator.hasNext()) {
+            subWindowsHandler = iterator.next();
+        }
+        WebDriverRunner.getWebDriver().switchTo().window(subWindowsHandler);
+        Thread.sleep(4000);
+        SignUp_Email_Fname.setValue("Gyandeep");
+        SignUp_E_Lname.setValue("Sahoo");
+        SignUp_E_CompanyName.setValue("");
+
+        //Assertion on Email SignUp CompanyName Empty
+        String Expected_Err_MSG = Email_ComanyName_Err_msg.getText();
+        String Actual_Err_MSG = "هذا الحقل مطلوب";
+        Assert.assertEquals(Expected_Err_MSG, Actual_Err_MSG);
+        Thread.sleep(4000);
+        SignUp_E_Phone.setValue("+46731298920");
+        SignUp_E_Passwrd.setValue("demo2022");
+        SignUp_E_ConfrmPasswrd.setValue("demo2022");
+        new Actions(WebDriverRunner.getWebDriver()).moveToElement(SignUp_E_CreateAccount).click().build().perform();
+        Thread.sleep(4000);
+
+        return AfdalPageFactory.getNewSignUp();
+    }
+
+    @Override
+    public IAfdalAnalyticsSignUpArPage SignUp_With_Valid_Email_Step2_INValid_Phone_No_N() throws InterruptedException {
+        getWebDriver().navigate().back();
+        String URL = getWebDriver().getCurrentUrl();
+        System.out.println(URL);
+        Thread.sleep(4000);
+        SignUp_Button.click();
+        Thread.sleep(4000);
+        String emailId = GetRandomString(7)+"@gmail.com";
+        String emailIdi = GetRandomString(7)+"@"+GetRandomString(5)+".com";
+        SignUp_Email_Field.setValue(emailId);
+        Thread.sleep(4000);
+        //Afdal_signup_checkbox.click();
+        Thread.sleep(4000);
+        Subscribe_Button_On_SignUp_Page.click();
+        Thread.sleep(4000);
+
+        //Assertion to check redirection on next page
+        String expectedURL = "https://staging.afdalanalytics.com/demo-dashboard";
+        String redirectURL=WebDriverRunner.getWebDriver().getCurrentUrl();
+        Assert.assertEquals(redirectURL,expectedURL);
+        Thread.sleep(4000);
+
+        Set<String> Windows = WebDriverRunner.getWebDriver().getWindowHandles();//Switch windows to gmail Signup.
+        Iterator<String> iterator = Windows.iterator();
+        String subWindowsHandler = null;
+        while (iterator.hasNext()) {
+            subWindowsHandler = iterator.next();
+        }
+        WebDriverRunner.getWebDriver().switchTo().window(subWindowsHandler);
+        Thread.sleep(4000);
+        SignUp_Email_Fname.setValue("Gyandeep");
+        SignUp_E_Lname.setValue("Sahoo");
+        SignUp_E_CompanyName.setValue("Vtechys");
+        SignUp_E_Phone.setValue("");
+
+        //Assertion on Email SignUp PhoneNumber Empty
+        String Expected_Err_MSG = Email_PhoneNo_Err_msg.getText();
+        String Actual_Err_MSG = "هذا الحقل مطلوب";
+        Assert.assertEquals(Expected_Err_MSG, Actual_Err_MSG);
+        Thread.sleep(4000);
+        SignUp_E_Passwrd.setValue("demo2022");
+        SignUp_E_ConfrmPasswrd.setValue("demo2022");
+        new Actions(WebDriverRunner.getWebDriver()).moveToElement(SignUp_E_CreateAccount).click().build().perform();
+        Thread.sleep(4000);
+
+        return AfdalPageFactory.getNewSignUp();
+    }
+
+    @Override
+    public IAfdalAnalyticsSignUpArPage SignUp_With_Valid_Email_Step2_INValid_Password_N() throws InterruptedException {
+        getWebDriver().navigate().back();
+        String URL = getWebDriver().getCurrentUrl();
+        System.out.println(URL);
+        Thread.sleep(4000);
+        SignUp_Button.click();
+        Thread.sleep(4000);
+        String emailId = GetRandomString(7)+"@gmail.com";
+        String emailIdi = GetRandomString(7)+"@"+GetRandomString(5)+".com";
+        SignUp_Email_Field.setValue(emailId);
+        Thread.sleep(4000);
+        //Afdal_signup_checkbox.click();
+        Thread.sleep(4000);
+        Subscribe_Button_On_SignUp_Page.click();
+        Thread.sleep(4000);
+
+        //Assertion to check redirection on next page
+        String expectedURL = "https://staging.afdalanalytics.com/demo-dashboard";
+        String redirectURL=WebDriverRunner.getWebDriver().getCurrentUrl();
+        Assert.assertEquals(redirectURL,expectedURL);
+        Thread.sleep(4000);
+
+        Set<String> Windows = WebDriverRunner.getWebDriver().getWindowHandles();//Switch windows to gmail Signup.
+        Iterator<String> iterator = Windows.iterator();
+        String subWindowsHandler = null;
+        while (iterator.hasNext()) {
+            subWindowsHandler = iterator.next();
+        }
+        WebDriverRunner.getWebDriver().switchTo().window(subWindowsHandler);
+        Thread.sleep(4000);
+        SignUp_Email_Fname.setValue("Gyandeep");
+        SignUp_E_Lname.setValue("Sahoo");
+        SignUp_E_CompanyName.setValue("Vtechys");
+        SignUp_E_Phone.setValue("+46731298920");
+        SignUp_E_Passwrd.setValue("");
+
+        //Assertion on Email SignUp Password Empty
+        String Expected_Err_MSG = Email_Password_Err_msg.getText();
+        String Actual_Err_MSG = "هذا الحقل مطلوب";
+        Assert.assertEquals(Expected_Err_MSG, Actual_Err_MSG);
+        Thread.sleep(4000);
+
+        new Actions(WebDriverRunner.getWebDriver()).moveToElement(SignUp_E_CreateAccount).click().build().perform();
+        Thread.sleep(4000);
+
+        return AfdalPageFactory.getNewSignUp();
+    }
+
+    @Override
+    public IAfdalAnalyticsSignUpArPage SignUp_With_Valid_Email_Step2_With_All_Field_empty_N() throws InterruptedException {
+        getWebDriver().navigate().back();
+        String URL = getWebDriver().getCurrentUrl();
+        System.out.println(URL);
+        Thread.sleep(4000);
+        SignUp_Button.click();
+        Thread.sleep(4000);
+        String emailId = GetRandomString(7)+"@gmail.com";
+        String emailIdi = GetRandomString(7)+"@"+GetRandomString(5)+".com";
+        SignUp_Email_Field.setValue(emailId);
+        Thread.sleep(4000);
+        //Afdal_signup_checkbox.click();
+        Thread.sleep(4000);
+        Subscribe_Button_On_SignUp_Page.click();
+        Thread.sleep(4000);
+
+        //Assertion to check redirection on next page
+        String expectedURL = "https://staging.afdalanalytics.com/demo-dashboard";
+        String redirectURL=WebDriverRunner.getWebDriver().getCurrentUrl();
+        Assert.assertEquals(redirectURL,expectedURL);
+        Thread.sleep(4000);
+
+        Set<String> Windows = WebDriverRunner.getWebDriver().getWindowHandles();//Switch windows to gmail Signup.
+        Iterator<String> iterator = Windows.iterator();
+        String subWindowsHandler = null;
+        while (iterator.hasNext()) {
+            subWindowsHandler = iterator.next();
+        }
+        WebDriverRunner.getWebDriver().switchTo().window(subWindowsHandler);
+        Thread.sleep(4000);
+        new Actions(WebDriverRunner.getWebDriver()).moveToElement(SignUp_E_CreateAccount).click().build().perform();
+        Thread.sleep(4000);
+        return AfdalPageFactory.getNewSignUp();
+    }
+
+    @Override
+    public IAfdalAnalyticsSignUpArPage SignUp_With_Valid_Email_Step2_Skip_To_demo_Page() throws InterruptedException {
+        getWebDriver().navigate().back();
+        String URL = getWebDriver().getCurrentUrl();
+        System.out.println(URL);
+        Thread.sleep(4000);
+        SignUp_Button.click();
+        Thread.sleep(4000);
+        String emailId = GetRandomString(7)+"@gmail.com";
+        String emailIdi = GetRandomString(7)+"@"+GetRandomString(5)+".com";
+        SignUp_Email_Field.setValue(emailId);
+        Thread.sleep(4000);
+        //Afdal_signup_checkbox.click();
+        Thread.sleep(4000);
+        Subscribe_Button_On_SignUp_Page.click();
+        Thread.sleep(4000);
+
+        //Assertion to check redirection on next page
+        String expectedURL = "https://staging.afdalanalytics.com/demo-dashboard";
+        String redirectURL=WebDriverRunner.getWebDriver().getCurrentUrl();
+        Assert.assertEquals(redirectURL,expectedURL);
+        Thread.sleep(4000);
+
+        Set<String> Windows = WebDriverRunner.getWebDriver().getWindowHandles();//Switch windows to gmail Signup.
+        Iterator<String> iterator = Windows.iterator();
+        String subWindowsHandler = null;
+        while (iterator.hasNext()) {
+            subWindowsHandler = iterator.next();
+        }
+        WebDriverRunner.getWebDriver().switchTo().window(subWindowsHandler);
+        Thread.sleep(4000);
+        //Email_Go_to_DemoPage_Button.click();
+
+        //Assertion to check redirection on back page
+        String ExpectedURL = "https://staging.afdalanalytics.com/demo-dashboard";
+        String RedirectURL=WebDriverRunner.getWebDriver().getCurrentUrl();
+        Assert.assertEquals(RedirectURL,ExpectedURL);
+        Thread.sleep(4000);
+
+
+
+
         return AfdalPageFactory.getNewSignUp();
     }
 

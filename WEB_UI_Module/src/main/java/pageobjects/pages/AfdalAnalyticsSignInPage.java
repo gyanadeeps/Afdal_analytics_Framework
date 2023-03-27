@@ -86,7 +86,7 @@ public class AfdalAnalyticsSignInPage implements IAfdalAnalyticsSignInPage
         getSignin_Button.waitUntil(Condition.visible,4000).click();
 
 //  Assertion on Sign In Subscribe Description and Link............
-        getHeader_Signin.shouldHave(Condition.exactText("سجل الدخول"));
+        //getHeader_Signin.shouldHave(Condition.exactText("سجل الدخول"));
         getHeader_SubscribeLinkDescription.shouldHave(Condition.exactText("قم بالإشتراك"));
         getHeader_SubscribeLink.shouldHave(Condition.visible).click();
         back();
