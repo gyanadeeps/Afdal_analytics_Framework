@@ -12,42 +12,42 @@ public class AfdalAnalyticsSignInPage implements IAfdalAnalyticsSignInPage
 {
 
     // Accept Cookies.................
-    SelenideElement getAcceptCookie_Button = $x("//button[contains(text(),'مُوَافق')]");
+    SelenideElement getAcceptCookie_Button = $x("//button[contains(text()='مُوَافق']");
 
-    SelenideElement getDescription_Cookie = $x("//p[contains(text(), \"نحن نستخدم ملفات تعريف الارتباط على موقعنا لأغراض التعريف والتحليل. باستخدام هذا الموقع فإنك توافق ع\")]");
+    SelenideElement getDescription_Cookie = $x("//p[contains(text(),='نحن نستخدم ملفات تعريف الارتباط على موقعنا لأغراض التعريف والتحليل. باستخدام هذا الموقع فإنك توافق ع')]");
 
     SelenideElement getCloseCookie_CrossSign = $x("//div[@id='cookie-close-btn']");
 
 
 //    SelenideElement getSignin_Button = $x("//nav//a[contains(text(),\"تسجيل الدخول\")]");
 
-    SelenideElement getSignin_Button = $x("//a[@role='button'][contains(text(),'تسجيل الدخول')]");
+    SelenideElement getSignin_Button = $x("//a[@role='button'][contains(text()='تسجيل الدخول')]");
 
-    SelenideElement getHeader_Signin = $x("//h3[contains(text(), \"سجل الدخول\")]");
+    SelenideElement getHeader_Signin = $x("//h3[contains(text()='سجل الدخول')]");
 
-    SelenideElement getHeader_SubscribeLink = $x("//a[@href=\"https://staging.afdalanalytics.com/signup\"]");
+    SelenideElement getHeader_SubscribeLink = $x("//a[@href='https://staging.afdalanalytics.com/signup']");
 
-    SelenideElement getHeader_SubscribeLinkDescription = $x("//a//u[contains(text(), \"قم بالإشتراك\")]");
+    SelenideElement getHeader_SubscribeLinkDescription = $x("//a//u[contains(text()='قم بالإشتراك')]");
 
     SelenideElement getEmailInput = $x("//input[@id='email']");
 
-    SelenideElement getSubHeader_Email = $x("//label[contains(text(),\"البريد الإلكتروني\")]");
+    SelenideElement getSubHeader_Email = $x("//label[contains(text()='البريد الإلكتروني')]");
 
-    SelenideElement getPasswordInput = $x("//input[@name=\"password\"]");
+    SelenideElement getPasswordInput = $x("//input[@name='password']");
 
-    SelenideElement getSubHeader_Password = $x("//label[@id=\"password\" and contains(text(), 'كلمة المرور')]");
+    SelenideElement getSubHeader_Password = $x("//label[@id='password' and contains(text()= 'كلمة المرور')]");
 
     SelenideElement getShowIcon_Password = $x("//i[@id='icon']");
 
-    SelenideElement getCheckBoxbutton = $x("//input[@id=\"exampleCheck1\"]");
+    SelenideElement getCheckBoxbutton = $x("//input[@id='exampleCheck1']");
 
-    SelenideElement getSubDescription_CheckBox = $x("//label[contains(text(), 'احتفظ بتسجيل دخولي')]");
+    SelenideElement getSubDescription_CheckBox = $x("//label[contains(text()='احتفظ بتسجيل دخولي')]");
 
-    SelenideElement getLink_ForgotYourPassword = $x("//a[@href=\"https://staging.afdalanalytics.com/reset-password\"]");
+    SelenideElement getLink_ForgotYourPassword = $x("//a[@href='https://staging.afdalanalytics.com/reset-password']");
 
-    SelenideElement getLinkDescription_ForgotYourPassword = $x("//u[contains(text(),'نسيت رقمك السري؟')]");
+    SelenideElement getLinkDescription_ForgotYourPassword = $x("//u[contains(text()='نسيت رقمك السري؟')]");
 
-    SelenideElement getSubmit_SignInButton = $x("//button[contains(text(),'سجل الدخول')]");
+    SelenideElement getSubmit_SignInButton = $x("//button[contains(text()='سجل الدخول')]");
 
     SelenideElement getAlert_EmailPasswordRequired = $x("//div[@class='alert alert-danger alert-block mb-0']//strong[contains(text(),'حقل بريد إلكتروني مطلوب. حقل كلمة المرور مطلوب.')]");
 
@@ -55,11 +55,11 @@ public class AfdalAnalyticsSignInPage implements IAfdalAnalyticsSignInPage
     SelenideElement getAlert_InvalidEmail = $x("//div[@class='alert alert-danger alert-block mb-0']//strong[contains(text(),'عليك إدخال بريد إلكتروني صحيح')]");
 
     SelenideElement getAlert_InvalidLoginAndWrongPassword = $x("//div[@class='alert alert-danger alert-block mb-0']//strong[contains(text(),'معلومات الدخول خاطئة او كلمة المرور خاطئة')]");
-    SelenideElement AlertCloseButton = $x("//button[@class=\"close\"]");
+    SelenideElement AlertCloseButton = $x("//button[@class='close']");
 
     SelenideElement getSubHeader_OrSignUpWithIn = $x("//span[contains(text(),'أو قم بتسجيل الدخول باستخدام')]");
 
-    SelenideElement getIcon_Google = $x("//a[@id=\"googleAuth\"]");
+    SelenideElement getIcon_Google = $x("//a[@id='googleAuth']");
 
     SelenideElement getIcon_LinkedIn = $x("//a[@id='linkedIn']");
 
@@ -69,7 +69,7 @@ public class AfdalAnalyticsSignInPage implements IAfdalAnalyticsSignInPage
 
 
     @Override
-    public IAfdalAnalyticsSignInPage verify_SignIn_UI() {
+    public IAfdalAnalyticsSignInPage verify_SignIn_UI() throws InterruptedException {
 
         // Assertion on PopUp-Cookie...........
 
@@ -84,9 +84,9 @@ public class AfdalAnalyticsSignInPage implements IAfdalAnalyticsSignInPage
         System.out.println(getSignin_Button.isDisplayed());
         getSignin_Button.shouldHave(Condition.exactText("تسجيل الدخول"));
         getSignin_Button.waitUntil(Condition.visible,4000).click();
-
+        Thread.sleep(4000);
 //  Assertion on Sign In Subscribe Description and Link............
-        //getHeader_Signin.shouldHave(Condition.exactText("سجل الدخول"));
+        getHeader_Signin.shouldHave(Condition.exactText("سجل الدخول"));
         getHeader_SubscribeLinkDescription.shouldHave(Condition.exactText("قم بالإشتراك"));
         getHeader_SubscribeLink.shouldHave(Condition.visible).click();
         back();

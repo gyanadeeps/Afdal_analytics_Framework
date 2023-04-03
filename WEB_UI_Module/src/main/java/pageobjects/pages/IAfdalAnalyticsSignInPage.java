@@ -6,7 +6,7 @@ public interface IAfdalAnalyticsSignInPage
 
 
 
-  IAfdalAnalyticsSignInPage verify_SignIn_UI();
+  IAfdalAnalyticsSignInPage verify_SignIn_UI() throws InterruptedException;
 
 
   IAfdalAnalyticsSignInPage verify_Signin_with_all_filed_are_empty_N();
